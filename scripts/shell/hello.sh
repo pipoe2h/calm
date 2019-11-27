@@ -1,2 +1,2 @@
 echo "Hello world"
-echo "@@{VAR_GREETINGS}@@"
+echo "@@{VM1_cloned_0.address}@@"
