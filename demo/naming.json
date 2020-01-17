@@ -4,6 +4,7 @@
             "code": "MAD",
             "azs": {
                 "mad-1a": {
+                    "azcode": "1a",
                     "dns": {
                         "primary": "192.168.101.10",
                         "secondary": "192.168.101.11"
@@ -22,6 +23,7 @@
                     }
                 },
                 "mad-1b": {
+                    "azcode": "1b",
                     "dns": {
                         "primary": "192.168.102.10",
                         "secondary": "192.168.102.11"
@@ -40,6 +42,7 @@
                     }
                 },
                 "mad-1c": {
+                    "azcode": "1c",
                     "dns": {
                         "primary": "192.168.103.10",
                         "secondary": "192.168.103.11"
@@ -63,6 +66,7 @@
             "code": "LCY",
             "azs": {
                 "lcy-1a": {
+                    "azcode": "1a",
                     "dns": {
                         "primary": "192.168.111.10",
                         "secondary": "192.168.111.11"
@@ -81,6 +85,7 @@
                     }
                 },
                 "lcy-1b": {
+                    "azcode": "1b",
                     "dns": {
                         "primary": "192.168.112.10",
                         "secondary": "192.168.112.11"
@@ -99,6 +104,7 @@
                     }
                 },
                 "lcy-1c": {
+                    "azcode": "1c",
                     "dns": {
                         "primary": "192.168.113.10",
                         "secondary": "192.168.113.11"
@@ -122,6 +128,7 @@
             "code": "HND",
             "azs": {
                 "hnd-1a": {
+                    "azcode": "1a",
                     "dns": {
                         "primary": "192.168.121.10",
                         "secondary": "192.168.121.11"
@@ -140,6 +147,7 @@
                     }
                 },
                 "hnd-1b": {
+                    "azcode": "1b",
                     "dns": {
                         "primary": "192.168.122.10",
                         "secondary": "192.168.122.11"
@@ -158,6 +166,7 @@
                     }
                 },
                 "hnd-1c": {
+                    "azcode": "1c",
                     "dns": {
                         "primary": "192.168.123.10",
                         "secondary": "192.168.123.11"
@@ -181,6 +190,7 @@
             "code": "JFK",
             "azs": {
                 "jfk-1a": {
+                    "azcode": "1a",
                     "dns": {
                         "primary": "192.168.131.10",
                         "secondary": "192.168.131.11"
@@ -199,6 +209,7 @@
                     }
                 },
                 "jfk-1b": {
+                    "azcode": "1b",
                     "dns": {
                         "primary": "192.168.132.10",
                         "secondary": "192.168.132.11"
@@ -217,6 +228,7 @@
                     }
                 },
                 "jfk-1c": {
+                    "azcode": "1c",
                     "dns": {
                         "primary": "192.168.133.10",
                         "secondary": "192.168.133.11"
