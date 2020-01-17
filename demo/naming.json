@@ -1,7 +1,12 @@
 {
     "datacenters": {
         "Madrid": {
-            "code": "MAD"
+            "code": "MAD",
+            "azs": [
+                "mad-1a",
+                "mad-1b",
+                "mad-1c"
+            ]
         },
         "London": {
             "code": "LCY"
