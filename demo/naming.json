@@ -1,0 +1,16 @@
+{
+    "datacenters": {
+        "Madrid": {
+            "code": "MAD"
+        },
+        "London": {
+            "code": "LCY"
+        },
+        "Tokyo": {
+            "code": "HND"
+        },
+        "New York": {
+            "code": "JFK"
+        }
+    }
+}
