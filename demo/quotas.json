@@ -1,0 +1,42 @@
+{
+    "tenants": {
+      "tenant1": {
+        "quotas": {
+          "cpu": {
+            "limit": 20,
+            "allocated": 0,
+            "remaining": 0
+          },
+          "memory": {
+            "limit": 20,
+            "allocated": 0,
+            "remaining": 0
+          },
+          "disk": {
+            "limit": 20,
+            "allocated": 0,
+            "remaining": 0
+          }
+        }
+      },
+      "tenant2": {
+        "quotas": {
+          "cpu": {
+            "limit": 30,
+            "allocated": 0,
+            "remaining": 0
+          },
+          "memory": {
+            "limit": 10,
+            "allocated": 0,
+            "remaining": 0
+          },
+          "disk": {
+            "limit": 20,
+            "allocated": 0,
+            "remaining": 0
+          }
+        }
+      }
+    }
+  }
