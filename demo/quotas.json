@@ -1,42 +1,44 @@
 {
-    "tenants": {
-      "tenant1": {
+    "tenants": [
+      {
+        "name": "tenant1",
         "quotas": {
           "cpu": {
             "limit": 20,
             "allocated": 0,
-            "remaining": 0
+            "available": 20
           },
           "memory": {
             "limit": 20,
             "allocated": 0,
-            "remaining": 0
+            "available": 20
           },
           "disk": {
             "limit": 20,
             "allocated": 0,
-            "remaining": 0
+            "available": 20
           }
         }
       },
-      "tenant2": {
+      {
+        "name": "tenant2",
         "quotas": {
           "cpu": {
-            "limit": 30,
+            "limit": 20,
             "allocated": 0,
-            "remaining": 0
+            "available": 20
           },
           "memory": {
-            "limit": 10,
+            "limit": 20,
             "allocated": 0,
-            "remaining": 0
+            "available": 20
           },
           "disk": {
             "limit": 20,
             "allocated": 0,
-            "remaining": 0
+            "available": 20
           }
         }
       }
-    }
+    ]
   }
