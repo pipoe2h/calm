@@ -39,6 +39,26 @@
             "available": 20
           }
         }
+      },
+      {
+        "name": "tenant3",
+        "quotas": {
+          "cpu": {
+            "limit": 20,
+            "allocated": 0,
+            "available": 20
+          },
+          "memory": {
+            "limit": 20,
+            "allocated": 0,
+            "available": 20
+          },
+          "disk": {
+            "limit": 40,
+            "allocated": 0,
+            "available": 40
+          }
+        }
       }
     ]
   }
