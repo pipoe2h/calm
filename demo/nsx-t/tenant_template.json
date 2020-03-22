@@ -1,0 +1,192 @@
+{
+    "resource_type": "Infra",
+    "id": "infra",
+    "children": [
+        {
+        "Tier1": {
+            "failover_mode": "NON_PREEMPTIVE",
+            "dhcp_config_paths": [
+                "/infra/dhcp-server-configs/@@{NSX_DHCP_SERVER}@@"
+            ],
+            "force_whitelisting": "false",
+            "default_rule_logging": "false",
+            "disable_firewall": "false",
+            "resource_type": "Tier1",
+            "id": "@@{TENANT_UUID}@@-tier-1-gw",
+            "description": "@@{TENANT_UUID}@@-tier-1-gw",
+            "display_name": "@@{TENANT_UUID}@@-tier-1-gw",
+            "route_advertisement_types": [
+                "TIER1_CONNECTED",
+                "TIER1_STATIC_ROUTES"
+            ],
+            "tags": [
+            {"scope": "calm", "tag": "@@{TENANT_UUID}@@"}
+            ],
+            "children": [
+            { 
+                "resource_type": "ChildLocaleServices",
+                "LocaleServices":{ 
+                    "resource_type": "LocaleServices",
+                    "id": "default",
+                    "edge_cluster_path": "/infra/sites/default/enforcement-points/default/edge-clusters/7fd9bb6b-3356-45ed-8f25-b6f0d84cd895"
+                }
+                },
+            {
+                "Segment": {
+                    "subnets": [
+                    {
+                        "gateway_address": "@@{defaultGwIp}@@",
+                        "dhcp_ranges": [
+                            "@@{dhcp_range}@@"
+                        ],
+                        "network": "@@{network_cidr}@@"
+                    }
+                    ],
+                    "resource_type": "Segment",
+                    "id": "@@{TENANT_UUID}@@-segment-default",
+                    "description": "@@{TENANT_UUID}@@-segment-default",
+                    "display_name": "@@{TENANT_UUID}@@-segment-default",
+                    "transport_zone_path": "/infra/sites/default/enforcement-points/default/transport-zones/@@{tzUuid}@@",
+                    "tags": [
+                    {"scope": "calm", "tag": "@@{TENANT_UUID}@@"}
+                    ],
+                    "marked_for_delete": "false"
+                },
+                "resource_type": "ChildSegment",
+                "marked_for_delete": "false"
+            }
+            ],
+            "marked_for_delete": "false"
+        },
+        "resource_type": "ChildTier1",
+        "marked_for_delete": "false"
+        },
+        { 
+        "resource_type": "ChildDomain",
+        "marked_for_delete": "false",
+        "Domain":{ 
+            "id": "default",
+            "resource_type": "Domain",
+            "marked_for_delete": "false",
+            "children":[ 
+                { 
+                    "resource_type": "ChildGroup",
+                    "Group":{ 
+                    "resource_type": "Group",
+                    "marked_for_delete": "false",
+                    "id": "@@{TENANT_UUID}@@-MGMT",
+                    "display_name": "@@{TENANT_UUID}@@-MGMT",
+                    "expression":[ 
+                        { 
+                            "ip_addresses":[ 
+                                "192.168.100.1/32",
+                                "192.168.110.10/32"
+                            ],
+                            "resource_type": "IPAddressExpression",
+                            "marked_for_delete": "false"
+                        }
+                    ]
+                    }
+                },
+                { 
+                    "resource_type": "ChildGroup",
+                    "Group":{ 
+                    "resource_type": "Group",
+                    "marked_for_delete": "false",
+                    "id": "@@{TENANT_UUID}@@-WEBAPP",
+                    "display_name": "@@{TENANT_UUID}@@-WEBAPP",
+                    "expression":[ 
+                        { 
+                            "member_type": "VirtualMachine",
+                            "key": "Tag",
+                            "operator": "EQUALS",
+                            "value": "@@{TENANT_UUID}@@-webapp|",
+                            "resource_type": "Condition",
+                            "marked_for_delete": "false"
+                        }
+                    ]
+                    }
+                },
+                { 
+                    "resource_type": "ChildGroup",
+                    "Group":{ 
+                    "resource_type": "Group",
+                    "marked_for_delete": "false",
+                    "id": "@@{TENANT_UUID}@@-LB",
+                    "display_name": "@@{TENANT_UUID}@@-LB",
+                    "expression":[ 
+                        { 
+                            "member_type": "VirtualMachine",
+                            "key": "Tag",
+                            "operator": "EQUALS",
+                            "value": "@@{TENANT_UUID}@@-webapp|@@{TENANT_UUID}@@-lb",
+                            "resource_type": "Condition",
+                            "marked_for_delete": "false"
+                        }
+                    ]
+                    }
+                },
+                { 
+                    "resource_type": "ChildGroup",
+                    "Group":{ 
+                    "resource_type": "Group",
+                    "marked_for_delete": "false",
+                    "id": "@@{TENANT_UUID}@@-WEB",
+                    "display_name": "@@{TENANT_UUID}@@-WEB",
+                    "expression":[ 
+                        { 
+                            "member_type": "VirtualMachine",
+                            "key": "Tag",
+                            "operator": "EQUALS",
+                            "value": "@@{TENANT_UUID}@@-webapp|@@{TENANT_UUID}@@-web",
+                            "resource_type": "Condition",
+                            "marked_for_delete": "false"
+                        }
+                    ]
+                    }
+                },
+                { 
+                    "resource_type": "ChildGroup",
+                    "Group":{ 
+                    "resource_type": "Group",
+                    "marked_for_delete": "false",
+                    "id": "@@{TENANT_UUID}@@-APP",
+                    "display_name": "@@{TENANT_UUID}@@-APP",
+                    "expression":[ 
+                        { 
+                            "member_type": "VirtualMachine",
+                            "key": "Tag",
+                            "operator": "EQUALS",
+                            "value": "@@{TENANT_UUID}@@-webapp|@@{TENANT_UUID}@@-app",
+                            "resource_type": "Condition",
+                            "marked_for_delete": "false"
+                        }
+                    ]
+                    }
+                },
+                { 
+                    "resource_type": "ChildGroup",
+                    "Group":{ 
+                    "resource_type": "Group",
+                    "marked_for_delete": "false",
+                    "id": "@@{TENANT_UUID}@@-DB",
+                    "display_name": "@@{TENANT_UUID}@@-DB",
+                    "expression":[ 
+                        { 
+                            "member_type": "VirtualMachine",
+                            "key": "Tag",
+                            "operator": "EQUALS",
+                            "value": "@@{TENANT_UUID}@@-webapp|@@{TENANT_UUID}@@-db",
+                            "resource_type": "Condition",
+                            "marked_for_delete": "false"
+                        }
+                    ]
+                    }
+                }
+            ]
+        }
+        }
+    ],
+    "marked_for_delete": "false",
+    "connectivity_strategy": "BLACKLIST"
+}
