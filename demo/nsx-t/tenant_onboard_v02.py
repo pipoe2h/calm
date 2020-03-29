@@ -58,9 +58,9 @@ payload = {
                     }
                   ],
                   "resource_type": "Segment",
-                  "id": "{}-segment-default".format(tenant_uuid),
-                  "description": "{}-segment-default".format(tenant_uuid),
-                  "display_name": "{}-segment-default".format(tenant_uuid),
+                  "id": "{}-default".format(tenant_uuid),
+                  "description": "{}-default".format(tenant_uuid),
+                  "display_name": "{}-default".format(tenant_uuid),
                   "transport_zone_path": "/infra/sites/default/enforcement-points/default/transport-zones/{}".format(nsx_tz_uuid),
                   "tags": [
                     {"scope": "calm", "tag": "{}".format(tenant_uuid)}
