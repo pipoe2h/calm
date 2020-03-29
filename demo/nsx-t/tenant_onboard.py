@@ -1,4 +1,24 @@
-{
+nsx_admin = '@@{cred_nsx_api.username}@@'
+nsx_password = '@@{cred_nsx_api.secret}@@'
+nsx_ip = '@@{nsx_mgr_ip}@@'
+nsx_dhcp = '@@{NSX_DHCP_SERVER}@@'
+nsx_tier0_id = '@@{t0Id}@@'
+tenant_uuid = '@@{TENANT_UUID}@@'
+nsx_edge_cluster_uuid = '@@{ecUuid}@@'
+nsx_ipam_gw = '@@{defaultGwIp}@@'
+nsx_ipam_range = '@@{dhcp_range}@@'
+nsx_ipam_cidr = '@@{network_cidr}@@'
+nsx_tz_uuid = '@@{tzUuid}@@'
+
+api_action = '/policy/api/v1/infra'
+
+headers = {'Content-Type': 'application/json',  'Accept':'application/json'}
+url = 'https://{}{}'.format(
+    nsx_ip,
+    api_action
+)
+
+payload = {
     "resource_type": "Infra",
     "id": "infra",
     "children": [
@@ -164,3 +184,20 @@
     "marked_for_delete": "false",
     "connectivity_strategy": "WHITELIST"
 }
+
+r = urlreq(
+    url,
+    verb='PATCH',
+    auth='BASIC', 
+    user=nsx_admin, 
+    passwd=nsx_password, 
+    params=json.dumps(payload),
+    headers=headers,
+    verify=False
+)
+
+if r.ok:
+    exit(0)
+else:
+    print "Post request failed", r.content
+    exit(1)
