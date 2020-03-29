@@ -46,7 +46,7 @@ payload = {
                               "marked_for_delete": "false",
                             },
                             {
-                              "member_type": "VirtualMachine",
+                              "member_type": "{}".format(membership_criteria),
                               "key": "Tag",
                               "operator": "EQUALS",
                               "value": "calm|{}".format(tenant_uuid),
