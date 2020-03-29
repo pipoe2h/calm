@@ -1,5 +1,5 @@
-nsx_admin = '@@{cred_nsx_api.username}@@'
-nsx_password = '@@{cred_nsx_api.secret}@@'
+nsx_admin = '@@{nsx_admin}@@'
+nsx_password = '@@{nsx_password}@@'
 nsx_ip = '@@{nsx_mgr_ip}@@'
 nsx_dhcp = '@@{NSX_DHCP_SERVER}@@'
 nsx_tier0_id = '@@{t0Id}@@'
