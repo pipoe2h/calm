@@ -42,7 +42,7 @@ payload = {
                 "resource_type": "ChildLocaleServices",
                 "LocaleServices":{ 
                    "resource_type": "LocaleServices",
-                   "id": "default",
+                   "id": "{}".format(nsx_edge_cluster_uuid),
                    "edge_cluster_path": "/infra/sites/default/enforcement-points/default/edge-clusters/{}".format(nsx_edge_cluster_uuid)
                 }
              },
