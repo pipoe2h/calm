@@ -3,6 +3,7 @@ nsx_password = '@@{nsx_password}@@'
 nsx_ip = '@@{nsx_mgr_ip}@@'
 tenant_uuid = '@@{TENANT_UUID}@@'
 group_name = '@@{nsgroup_name}@@'
+membership_criteria = '@@{nsgroup_membership_criteria}@@'
 
 headers = {'Content-Type': 'application/json',  'Accept':'application/json'}
 
@@ -32,7 +33,7 @@ payload = {
                         {
                           "expressions": [
                             {
-                              "member_type": "VirtualMachine",
+                              "member_type": "{}".format(membership_criteria),
                               "key": "Tag",
                               "operator": "EQUALS",
                               "value": "{}|{}".format(tenant_uuid, group_name),
