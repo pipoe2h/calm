@@ -86,6 +86,7 @@ r = urlreq(
 )
 
 if r.ok:
+    print("Successful")
     exit(0)
 else:
     print "Post request failed", r.content
