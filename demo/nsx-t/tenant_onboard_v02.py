@@ -9,6 +9,8 @@ nsx_ipam_gw = '@@{defaultGwIp}@@'
 nsx_ipam_range = '@@{dhcp_range}@@'
 nsx_ipam_cidr = '@@{network_cidr}@@'
 nsx_tz_uuid = '@@{tzUuid}@@'
+nsx_ipam_dns = '@@{DNS}@@'
+nsx_domain_name = '@@{DOMAIN_NAME}@@'
 
 headers = {'Content-Type': 'application/json',  'Accept':'application/json'}
 
@@ -191,6 +193,73 @@ r = urlreq(
     auth='BASIC', 
     user=nsx_admin, 
     passwd=nsx_password, 
+    params=json.dumps(payload),
+    headers=headers,
+    verify=False
+)
+
+if r.ok:
+    continue
+else:
+    print "Post request failed", r.content
+    exit(1)
+
+api_action = '/api/v1/dhcp/servers'
+url = 'https://{}{}'.format(
+    nsx_ip,
+    api_action
+)
+
+r = urlreq(
+    url,
+    verb='GET',
+    auth='BASIC', 
+    user=nsx_admin, 
+    passwd=nsx_password, 
+    headers=headers,
+    verify=False
+)
+
+if r.ok:
+    for dhcp in json.loads(r.content):
+      if dhcp['display_name'].startswith(tenant_uuid):
+        dhcp_id = dhcp['id']
+else:
+    print "Post request failed", r.content
+    exit(1)
+
+api_action = '/api/v1/dhcp/servers'
+url = 'https://{}{}/{}'.format(
+    nsx_ip,
+    api_action,
+    dhcp_id
+)
+
+r = urlreq(
+    url,
+    verb='GET',
+    auth='BASIC', 
+    user=nsx_admin, 
+    passwd=nsx_password, 
+    headers=headers,
+    verify=False
+)
+
+if r.ok:
+    payload = json.loads(r.content)
+else:
+    print "Post request failed", r.content
+    exit(1)
+
+payload['ipv4_dhcp_server']['dns_nameservers'][0] = nsx_ipam_dns
+payload['ipv4_dhcp_server']['domain_name'] = nsx_domain_name
+
+r = urlreq(
+    url,
+    verb='PUT',
+    auth='BASIC', 
+    user=nsx_admin, 
+    passwd=nsx_password,
     params=json.dumps(payload),
     headers=headers,
     verify=False
