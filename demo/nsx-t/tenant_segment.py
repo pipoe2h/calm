@@ -2,6 +2,7 @@ nsx_admin = '@@{nsx_admin}@@'
 nsx_password = '@@{nsx_password}@@'
 nsx_ip = '@@{nsx_mgr_ip}@@'
 tenant_uuid = '@@{TENANT_UUID}@@'
+segment_name = '@@{segment_name}@@'
 
 headers = {'Content-Type': 'application/json',  'Accept':'application/json'}
 
