@@ -25,6 +25,7 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         repository: ukdemo/calm-dsl
         command: buildAndPush
+        arguments: '--no-cache'
         tags: |
           latest
           $(Build.BuildId)
