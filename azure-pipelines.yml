@@ -46,5 +46,5 @@ stages:
               sudo ln -s /root/.local/bin/calm /usr/local/bin/calm
               sudo calm init dsl -i $(pc_ip) -P $(pc_port) -u $(pc_user) -p $(pc_pass) -pj $(calm_projectName)
               sudo calm run runbook -i jg-tf-aws_vpc
-              sudo calm watch runbook jg-tf-aws_vpc
+              sudo calm watch runbook_execution jg-tf-aws_vpc
               sudo py3clean .
