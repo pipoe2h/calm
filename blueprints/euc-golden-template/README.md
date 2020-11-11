@@ -57,3 +57,5 @@
     * Click **Save**
 
     ![Configure Windows](images/02_calm_template_windows.png)
+
+5. Launch blueprint completing the inputs
