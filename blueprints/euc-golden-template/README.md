@@ -27,3 +27,9 @@
 
     SkipBDDWelcome=YES
     ```
+
+* An existing Citrix deployment
+
+## Installation
+
+1. Download the [Calm blueprint](https://raw.githubusercontent.com/pipoe2h/calm/master/blueprints/euc-golden-template/ntc-euc-template.json)
