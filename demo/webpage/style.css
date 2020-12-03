@@ -41,4 +41,27 @@ h1 {
   text-align: center;
 }
 
+.nutanix {
+  background-color: #bfd02f;
+}
+
+.xi {
+  background-color: #024DA1;
+}
+
+.azure {
+  background-color: #1e75bb;
+}
+
+.aws {
+  background-color: #ff9802;
+}
+
+.gcp {
+  background-color: #eb412e;
+}
+
+.vmware {
+  background-color: #717174;
+}
 
