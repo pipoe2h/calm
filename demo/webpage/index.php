@@ -25,12 +25,12 @@
             <div class="row">
                 <div class="mt-5 mb-5 col-lg-6">
                     <p class="text-center">
-                        <a href="#" class="float-left btn btn-lg btn-secondary">Host: <?php echo gethostname(); ?></a>
+                        <a href="#" class="btn btn-md btn-secondary">Host: <?php echo gethostname(); ?></a>
                     </p>
                 </div>
                 <div class="mt-5 mb-5 col-lg-6">
                     <p class="text-center">
-                        <a href="#" class="<?php echo strtolower(getenv('CALM_PLATFORM')); ?> float-left btn btn-lg btn-secondary">Cloud: <?php echo getenv('CALM_PLATFORM'); ?></a>
+                        <a href="#" class="<?php echo strtolower(getenv('CALM_PLATFORM')); ?> btn btn-md btn-secondary">Cloud: <?php echo getenv('CALM_PLATFORM'); ?></a>
                     </p>
                 </div>
             </div>
@@ -45,11 +45,11 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a class="float-left" href="https://github.com/pipoe2h" target="_blank">Designed by Jose Gomez</a>
+                    <a href="https://github.com/pipoe2h" target="_blank">Designed by Jose Gomez</a>
                 </div>
-                <div class="col">
-                    <a class="float-md-none" href="https://nutanix.com" target="_blank"><img class="img-fluid" src="nutanix_logo.png"></a>
-                </div>
+                    <div class="col">
+                        <a href="https://nutanix.com" target="_blank"><img class="img-fluid" src="nutanix_logo.png"></a>
+                    </div>
                 <div class="col">
                     <a class="float-right" href="<?php echo 'http://' .getenv('CALM_LB'). ':8080/stats'; ?>" target="_blank">Load Balancer</a>
                 </div>
