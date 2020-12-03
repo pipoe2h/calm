@@ -22,7 +22,7 @@
                     <h1>Nutanix Hybrid Cloud Application</h1>
                 </div>
                 <div class="col-3">
-                    <a href="<?php echo 'http://' .strtolower(getenv('CALM_LB')). ':8080/stats'; ?>" target="_blank">Load Balancer</a>
+                    <a href="<?php echo 'http://' .getenv('CALM_LB'). ':8080/stats'; ?>" target="_blank">Load Balancer</a>
                 </div>
             </div>
             <div class="row">
