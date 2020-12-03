@@ -30,7 +30,7 @@
                 </div>
                 <div class="mt-5 mb-5 col-lg-6">
                     <p class="text-center">
-                        <a href="#" class="btn btn-lg btn-secondary">Cloud: <?php echo getenv('CALM_PLATFORM'); ?></a>
+                        <a href="#" class="<?php echo strtolower(getenv('CALM_PLATFORM')); ?> btn btn-lg btn-secondary">Cloud: <?php echo getenv('CALM_PLATFORM'); ?></a>
                     </p>
                 </div>
             </div>
