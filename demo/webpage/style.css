@@ -1,0 +1,44 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #4C4C4E;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #4C4C4E;
+  color: #fff;
+}
+
+body {
+  justify-content: center; 
+
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+h1 {
+  text-align: center;
+}
+
+
