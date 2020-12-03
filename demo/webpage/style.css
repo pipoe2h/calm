@@ -26,7 +26,6 @@ a:hover {
 
 html {
   position: relative;
-  min-height: 100%;
 }
 body {
   height: 100%;
@@ -42,7 +41,7 @@ body {
   bottom: 0;
   width: 100%;
   /* height: 60px; */
-  line-height: 60px;
+  line-height: 40px;
   background-color: #024DA1;
 }
 
