@@ -8,3 +8,4 @@
 
 * The load balancer runs on AHV on-prem
 
+* This is the simple web page that this blueprint uses <https://github.com/pipoe2h/calm/tree/master/demo/webpage>
