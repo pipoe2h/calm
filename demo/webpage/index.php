@@ -1,3 +1,7 @@
+<?php
+$platform = $_ENV['PLATFORM'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +34,7 @@
                 </div>
                 <div class="mt-5 mb-5 col-lg-6">
                     <p class="text-center">
-                        <a href="#" class="<?php echo strtolower(getenv('CALM_PLATFORM')); ?> btn btn-md btn-secondary">Cloud: <?php echo getenv('CALM_PLATFORM'); ?></a>
+                        <a href="#" class="<?php echo $platform ?> btn btn-md btn-secondary">Cloud: <?php echo $platform ?></a>
                     </p>
                 </div>
             </div>
