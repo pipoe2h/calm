@@ -75,9 +75,7 @@ stages:
           steps:
           - checkout: none
           - script: |
-              echo 'variable_list = [
-              {"value": {"value": "ukdemo/webpage:$(Build.BuildId)"}, "name": "KUBERNETES_DEPLOYMENT_CONTAINER_IMAGE"},
-              ]' > variables.py
+              echo 'variable_list = [{"value": {"value": "ukdemo/webpage:$(Build.BuildId)"}, "name": "KUBERNETES_DEPLOYMENT_CONTAINER_IMAGE"}]' > variables.py
               sudo ln -s /root/.local/bin/calm /usr/local/bin/calm
               sudo calm init dsl -i $(pc_ip) -P $(pc_port) -u $(pc_user) -p $(pc_pass) -pj $(calm_projectName)
               sudo calm run action -w -a $(Build.SourceVersionMessage) -r variables.py UpdateApp
