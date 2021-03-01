@@ -47,7 +47,7 @@ stages:
         Dockerfile: '**/Dockerfile.dsl'
         repository: ukdemo/calm-dsl
         command: build
-        arguments: '--no-cache'
+        # arguments: '--no-cache'
         tags: |
           latest
           $(Build.BuildId)
@@ -80,5 +80,5 @@ stages:
               ]' > variables.py
               sudo ln -s /root/.local/bin/calm /usr/local/bin/calm
               sudo calm init dsl -i $(pc_ip) -P $(pc_port) -u $(pc_user) -p $(pc_pass) -pj $(calm_projectName)
-              sudo calm run action -w -a jg-dsl104 -r variables.py UpdateApp
+              sudo calm run action -w -a $(Build.SourceVersionMessage) -r variables.py UpdateApp
               sudo py3clean .
