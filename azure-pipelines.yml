@@ -16,12 +16,13 @@ stages:
 - stage: Build
   displayName: Build and push stage
   jobs:
-  - job: Build
+  - job: BuildWebpage
     displayName: Build job
     steps:
     - task: Docker@2
       displayName: Build image
       inputs:
+        Dockerfile: Dockerfile.webpage
         repository: ukdemo/webpage
         command: build
         # arguments: '--no-cache'
@@ -37,28 +38,47 @@ stages:
         tags: |
           latest
           $(Build.BuildId)
+  - job: BuildDsl
+    displayName: Build job
+    steps:
+    - task: Docker@2
+      displayName: Build image
+      inputs:
+        Dockerfile: Dockerfile.dsl
+        repository: ukdemo/calm-dsl
+        command: build
+        # arguments: '--no-cache'
+        tags: |
+          latest
+          $(Build.BuildId)
+    - task: Docker@2
+      displayName: Push image
+      inputs:
+        containerRegistry: $(dockerRegistryServiceConnection)
+        repository: ukdemo/calm-dsl
+        command: push
+        tags: |
+          latest
+          $(Build.BuildId)
 
 
-      
 - stage: Deploy
   jobs:
   - deployment: DeployWepage
     displayName: 'Deploy to Calm'
     container:
-      image: ntnx/calm-dsl:latest
+      image: ukdemo/calm-dsl:latest
     environment: 'dev'
     strategy:
       runOnce:
         deploy:
           steps:
           - checkout: none
-          
           - script: |
               echo 'variable_list = [
               {"value": {"value": "ukdemo/webpage:$(Build.BuildId)"}, "name": "KUBERNETES_DEPLOYMENT_CONTAINER_IMAGE"},
               ]' > variables.py
               sudo ln -s /root/.local/bin/calm /usr/local/bin/calm
               sudo calm init dsl -i $(pc_ip) -P $(pc_port) -u $(pc_user) -p $(pc_pass) -pj $(calm_projectName)
-              sudo calm run action -h
               sudo calm run action -w -a jg-dsl104 -r variables.py UpdateApp
               sudo py3clean .
