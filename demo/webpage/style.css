@@ -31,7 +31,7 @@ html {
 body {
   height: 100%;
   background-color: #4C4C4E;
-  background-image: url("https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/f43866f8-087c-4b6b-bc45-7f8e29fcddd9/2101-DCHP-Carousel-Eastereggs.jpeg");
+  /* background-image: url("https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/f43866f8-087c-4b6b-bc45-7f8e29fcddd9/2101-DCHP-Carousel-Eastereggs.jpeg"); */
   color: #fff;
   justify-content: center;
   margin-bottom: 60px;
