@@ -8,7 +8,7 @@ variables:
   - group: theale-prism-central
 
 trigger:
-  - master
+  - webpage
 
 pool: 'default'
 
@@ -22,7 +22,7 @@ stages:
     - task: Docker@2
       displayName: Build image
       inputs:
-        repository: ukdemo/calm-dsl
+        repository: ukdemo/webpage
         command: build
         # arguments: '--no-cache'
         tags: |
@@ -32,7 +32,7 @@ stages:
       displayName: Push image
       inputs:
         containerRegistry: $(dockerRegistryServiceConnection)
-        repository: ukdemo/calm-dsl
+        repository: ukdemo/webpage
         command: push
         tags: |
           latest
@@ -41,7 +41,7 @@ stages:
       
 - stage: Deploy
   jobs:
-  - deployment: DeployCalm
+  - deployment: DeployWepage
     displayName: 'Deploy to Calm'
     container:
       image: ukdemo/calm-dsl:latest
@@ -53,7 +53,10 @@ stages:
           - checkout: none
           
           - script: |
+              echo 'variable_list = [
+              {"value": {"value": "ukdemo/webpage:$(Build.BuildId)"}, "name": "KUBERNETES_DEPLOYMENT_CONTAINER_IMAGE"},
+              ]' > variables.py
               sudo ln -s /root/.local/bin/calm /usr/local/bin/calm
               sudo calm init dsl -i $(pc_ip) -P $(pc_port) -u $(pc_user) -p $(pc_pass) -pj $(calm_projectName)
-              sudo calm run runbook -w -i demo-tf-aws_vpc
+              sudo calm run action -w -a jg-dsl104 -l variables.py UpdateApp
               sudo py3clean .
