@@ -16,7 +16,7 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  version = "~> 3.0"
+  # version = "~> 3.0"
   region  = var.aws_region
 }
 
