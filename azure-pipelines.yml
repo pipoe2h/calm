@@ -47,7 +47,7 @@ stages:
         Dockerfile: '**/Dockerfile.dsl'
         repository: ukdemo/calm-dsl
         command: build
-        # arguments: '--no-cache'
+        arguments: '--no-cache'
         tags: |
           latest
           $(Build.BuildId)
