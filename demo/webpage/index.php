@@ -52,7 +52,8 @@ $platform = $_ENV['PLATFORM'];
                     <a href="https://github.com/pipoe2h" target="_blank">Designed by Jose Gomez</a>
                 </div>
                     <div class="col">
-                        <a href="https://nutanix.com" target="_blank"><img class="img-fluid" src="nutanix_logo.png"></a>
+                        <a href="https://nutanix.com" target="_blank"><img class="img-fluid" src="https://www.tescoplc.com/assets/img/tesco-logo.svg"></a>
+                        <!-- <a href="https://nutanix.com" target="_blank"><img class="img-fluid" src="nutanix_logo.png"></a> -->
                     </div>
                 <div class="col">
                     <a class="float-right" href="<?php echo 'http://' .getenv('CALM_LB'). ':8080/stats'; ?>" target="_blank">Load Balancer</a>

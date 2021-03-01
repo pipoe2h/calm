@@ -31,7 +31,7 @@ html {
 body {
   height: 100%;
   background-color: #4C4C4E;
-  background-image: url("https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/88a041c6-407d-4f21-8c0e-695d5ae50a71/1945-Centenary-Zone-GHS-Hero-1600x451.jpeg");
+  /* background-image: url("https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/88a041c6-407d-4f21-8c0e-695d5ae50a71/1945-Centenary-Zone-GHS-Hero-1600x451.jpeg"); */
   color: #fff;
   justify-content: center;
   margin-bottom: 60px;

@@ -71,6 +71,7 @@ stages:
     environment: 'dev'
     variables:
       calm_projectName: jg-my-demo
+      CALM_DSL_LOG_LEVEL: INFO
     strategy:
       runOnce:
         deploy:
