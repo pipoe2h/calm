@@ -36,7 +36,8 @@ stages:
         command: push
         tags: |
           latest
-          $(Build.BuildId)             
+          $(Build.BuildId)
+
 
       
 - stage: Deploy
@@ -44,7 +45,7 @@ stages:
   - deployment: DeployWepage
     displayName: 'Deploy to Calm'
     container:
-      image: ukdemo/calm-dsl:latest
+      image: ntnx/calm-dsl:latest
     environment: 'dev'
     strategy:
       runOnce:
