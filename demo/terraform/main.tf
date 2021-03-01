@@ -16,11 +16,10 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  # version = "~> 3.0"
   region  = var.aws_region
 }
 
 # Create a VPC
-resource "aws_vpc" "example" {
- cidr_block = var.vpc_cidr
-}
+# resource "aws_vpc" "example" {
+#  cidr_block = var.vpc_cidr
+# }
