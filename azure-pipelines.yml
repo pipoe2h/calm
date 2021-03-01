@@ -22,7 +22,7 @@ stages:
     - task: Docker@2
       displayName: Build image
       inputs:
-        Dockerfile: Dockerfile.webpage
+        Dockerfile: '**/Dockerfile.webpage'
         repository: ukdemo/webpage
         command: build
         # arguments: '--no-cache'
@@ -44,7 +44,7 @@ stages:
     - task: Docker@2
       displayName: Build image
       inputs:
-        Dockerfile: Dockerfile.dsl
+        Dockerfile: '**/Dockerfile.dsl'
         repository: ukdemo/calm-dsl
         command: build
         # arguments: '--no-cache'
