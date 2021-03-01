@@ -38,28 +38,28 @@ stages:
         tags: |
           latest
           $(Build.BuildId)
-  - job: BuildDsl
-    displayName: Build job
-    steps:
-    - task: Docker@2
-      displayName: Build image
-      inputs:
-        Dockerfile: '**/Dockerfile.dsl'
-        repository: ukdemo/calm-dsl
-        command: build
-        # arguments: '--no-cache'
-        tags: |
-          latest
-          $(Build.BuildId)
-    - task: Docker@2
-      displayName: Push image
-      inputs:
-        containerRegistry: $(dockerRegistryServiceConnection)
-        repository: ukdemo/calm-dsl
-        command: push
-        tags: |
-          latest
-          $(Build.BuildId)
+  # - job: BuildDsl
+  #   displayName: Build job
+  #   steps:
+  #   - task: Docker@2
+  #     displayName: Build image
+  #     inputs:
+  #       Dockerfile: '**/Dockerfile.dsl'
+  #       repository: ukdemo/calm-dsl
+  #       command: build
+  #       # arguments: '--no-cache'
+  #       tags: |
+  #         latest
+  #         $(Build.BuildId)
+  #   - task: Docker@2
+  #     displayName: Push image
+  #     inputs:
+  #       containerRegistry: $(dockerRegistryServiceConnection)
+  #       repository: ukdemo/calm-dsl
+  #       command: push
+  #       tags: |
+  #         latest
+  #         $(Build.BuildId)
 
 
 - stage: Deploy
@@ -69,6 +69,8 @@ stages:
     container:
       image: ukdemo/calm-dsl:latest
     environment: 'dev'
+    variables:
+      calm_projectName: jg-my-demo
     strategy:
       runOnce:
         deploy:

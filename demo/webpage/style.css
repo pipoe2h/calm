@@ -31,7 +31,7 @@ html {
 body {
   height: 100%;
   background-color: #4C4C4E;
-  background-image: url("https://digitalcontent.api.tesco.com/v2/media/homepage/78eaa217-9eda-4f11-927b-30d15bf0187c/2152-DCHP-LargeStamp-Health.jpeg");
+  /* background-image: url("https://digitalcontent.api.tesco.com/v2/media/homepage/78eaa217-9eda-4f11-927b-30d15bf0187c/2152-DCHP-LargeStamp-Health.jpeg"); */
   color: #fff;
   justify-content: center;
   margin-bottom: 60px;
