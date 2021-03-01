@@ -52,35 +52,35 @@ h1 {
 
 .nutanix {
   background-color: #bfd02f;
-  /* color: white; */
+  color: white;
 }
 
 .xi {
   background-color: #024DA1;
-  /* color: white; */
+  color: white;
 }
 
 .azure {
   background-color: #1e75bb;
-  /* color: white; */
+  color: white;
 }
 
 .aws {
   background-color: #ff9802;
-  /* color: white; */
+  color: white;
 }
 
 .gcp {
   background-color: #eb412e;
-  /* color: white; */
+  color: white;
 }
 
 .vmware {
   background-color: #717174;
-  /* color: white; */
+  color: white;
 }
 
 .k8s {
   background-color: #f30df3;
-  color: black;
+  color: white;
 }
