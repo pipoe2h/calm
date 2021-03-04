@@ -13,30 +13,30 @@ trigger:
 pool: 'default'
 
 stages:
-- stage: Build
-  displayName: Build and push stage
-  jobs:
-  - job: Build
-    displayName: Build job
-    steps:
-    - task: Docker@2
-      displayName: Build image
-      inputs:
-        repository: ukdemo/calm-dsl
-        command: build
-        # arguments: '--no-cache'
-        tags: |
-          latest
-          $(Build.BuildId)
-    - task: Docker@2
-      displayName: Push image
-      inputs:
-        containerRegistry: $(dockerRegistryServiceConnection)
-        repository: ukdemo/calm-dsl
-        command: push
-        tags: |
-          latest
-          $(Build.BuildId)             
+# - stage: Build
+#   displayName: Build and push stage
+#   jobs:
+#   - job: Build
+#     displayName: Build job
+#     steps:
+#     - task: Docker@2
+#       displayName: Build image
+#       inputs:
+#         repository: ukdemo/calm-dsl
+#         command: build
+#         # arguments: '--no-cache'
+#         tags: |
+#           latest
+#           $(Build.BuildId)
+#     - task: Docker@2
+#       displayName: Push image
+#       inputs:
+#         containerRegistry: $(dockerRegistryServiceConnection)
+#         repository: ukdemo/calm-dsl
+#         command: push
+#         tags: |
+#           latest
+#           $(Build.BuildId)             
 
       
 - stage: Deploy
