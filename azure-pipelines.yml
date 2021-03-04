@@ -70,7 +70,7 @@ stages:
       image: ukdemo/calm-dsl:latest
     environment: 'dev'
     variables:
-      calm_projectName: jg-demo-tesco
+      calm_projectName: jg-tesco01
       CALM_DSL_LOG_LEVEL: INFO
     strategy:
       runOnce:
