@@ -49,7 +49,7 @@ $platform = $_ENV['PLATFORM'];
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a href="https://github.com/pipoe2h" target="_blank">Designed by Jose Gomez</a>
+                    <a href="https://github.com/pipoe2h" target="_blank">Designed by Chris Gomez</a>
                 </div>
                     <div class="col">
                         <!-- <a href="https://nutanix.com" target="_blank"><img class="img-fluid" src="https://www.tescoplc.com/assets/img/tesco-logo.svg"></a> -->
