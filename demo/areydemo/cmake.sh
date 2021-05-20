@@ -1,0 +1,1 @@
+sudo apt install -y cmake || sudo yum install -y cmake
