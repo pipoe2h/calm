@@ -6,7 +6,7 @@
                 "qt": {
                     "version": "4.8",
                     "app_name": "IRUATNEC",
-                    "script_url": "https://code.qt.io/cgit/qbs/qbs.git/plain/scripts/install-qt.sh"
+                    "script_url": "https://raw.githubusercontent.com/pipoe2h/calm/webpage/demo/areydemo/qt4.sh"
                 }
             },
             {
@@ -15,7 +15,7 @@
                 "qt": {
                     "version": "5.9.4",
                     "app_name": "ELLIACAL",
-                    "script_url": "https://code.qt.io/cgit/qbs/qbs.git/plain/scripts/install-qt.sh"
+                    "script_url": "https://raw.githubusercontent.com/pipoe2h/calm/webpage/demo/areydemo/qt5.sh"
                 }
             }
         ],
@@ -34,32 +34,23 @@
         }]
     },
     {
-        "app_name": "NAMHUL",
+        "app_name": "SSOR",
         "os_image": [{
                 "name": "Ubuntu 16.04",
                 "image_url": "https://cloud-images.ubuntu.com/releases/xenial/release/ubuntu-16.04-server-cloudimg-amd64-disk1.img",
                 "qt": {
-                    "version": "4.8",
-                    "app_name": "EVURTS",
-                    "script_url": "https://code.qt.io/cgit/qbs/qbs.git/plain/scripts/install-qt.sh"
+                    "version": "",
+                    "app_name": "",
+                    "script_url": ""
                 }
             },
             {
                 "name": "Ubuntu 18.04",
                 "image_url": "https://cloud-images.ubuntu.com/releases/bionic/release/ubuntu-18.04-server-cloudimg-amd64.img",
                 "qt": {
-                    "version": "5.9.4",
-                    "app_name": "UAT",
-                    "script_url": "https://code.qt.io/cgit/qbs/qbs.git/plain/scripts/install-qt.sh"
-                }
-            },
-            {
-                "name": "Ubuntu 20.04",
-                "image_url": "https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-amd64-disk-kvm.img",
-                "qt": {
-                    "version": "5.9.4",
-                    "app_name": "UAT",
-                    "script_url": "https://code.qt.io/cgit/qbs/qbs.git/plain/scripts/install-qt.sh"
+                    "version": "",
+                    "app_name": "",
+                    "script_url": ""
                 }
             }
         ],
