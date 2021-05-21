@@ -21,11 +21,11 @@
         ],
         "compilers": [{
                 "name": "Qmake",
-                "script_url": ""
+                "script_url": "n/a"
             },
             {
                 "name": "Make",
-                "script_url": ""
+                "script_url": "n/a"
             }
         ],
         "editors": [{
@@ -60,7 +60,7 @@
             },
             {
                 "name": "Make",
-                "script_url": ""
+                "script_url": "n/a"
             }
         ],
         "editors": [{
