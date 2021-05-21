@@ -39,18 +39,18 @@
                 "name": "Ubuntu 16.04",
                 "image_url": "https://cloud-images.ubuntu.com/releases/xenial/release/ubuntu-16.04-server-cloudimg-amd64-disk1.img",
                 "qt": {
-                    "version": "",
-                    "app_name": "",
-                    "script_url": ""
+                    "version": "n/a",
+                    "app_name": "n/a",
+                    "script_url": "n/a"
                 }
             },
             {
                 "name": "Ubuntu 18.04",
                 "image_url": "https://cloud-images.ubuntu.com/releases/bionic/release/ubuntu-18.04-server-cloudimg-amd64.img",
                 "qt": {
-                    "version": "",
-                    "app_name": "",
-                    "script_url": ""
+                    "version": "n/a",
+                    "app_name": "n/a",
+                    "script_url": "n/a"
                 }
             }
         ],
