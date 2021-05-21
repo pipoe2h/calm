@@ -3,18 +3,20 @@
         "os_image": [{
                 "name": "CentOS 7.1",
                 "image_url": "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.qcow2",
-                "qt_version": [{
+                "qt": {
                     "version": "4.8",
-                    "app_name": "IRUATNEC"
-                }]
+                    "app_name": "IRUATNEC",
+                    "script_url": "https://code.qt.io/cgit/qbs/qbs.git/plain/scripts/install-qt.sh"
+                }
             },
             {
                 "name": "CentOS 8.2",
                 "image_url": "https://cloud.centos.org/centos/8/x86_64/images/CentOS-8-GenericCloud-8.2.2004-20200611.2.x86_64.qcow2",
-                "qt_version": [{
+                "qt": {
                     "version": "5.9.4",
-                    "app_name": "ELLIACAL"
-                }]
+                    "app_name": "ELLIACAL",
+                    "script_url": "https://code.qt.io/cgit/qbs/qbs.git/plain/scripts/install-qt.sh"
+                }
             }
         ],
         "compilers": [{
@@ -36,31 +38,34 @@
         "os_image": [{
                 "name": "Ubuntu 16.04",
                 "image_url": "https://cloud-images.ubuntu.com/releases/xenial/release/ubuntu-16.04-server-cloudimg-amd64-disk1.img",
-                "qt_version": [{
+                "qt": {
                     "version": "4.8",
-                    "app_name": "EVURTS"
-                }]
+                    "app_name": "EVURTS",
+                    "script_url": "https://code.qt.io/cgit/qbs/qbs.git/plain/scripts/install-qt.sh"
+                }
             },
             {
                 "name": "Ubuntu 18.04",
                 "image_url": "https://cloud-images.ubuntu.com/releases/bionic/release/ubuntu-18.04-server-cloudimg-amd64.img",
-                "qt_version": [{
+                "qt": {
                     "version": "5.9.4",
-                    "app_name": "UAT"
-                }]
+                    "app_name": "UAT",
+                    "script_url": "https://code.qt.io/cgit/qbs/qbs.git/plain/scripts/install-qt.sh"
+                }
             },
             {
                 "name": "Ubuntu 20.04",
                 "image_url": "https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-amd64-disk-kvm.img",
-                "qt_version": [{
+                "qt": {
                     "version": "5.9.4",
-                    "app_name": "UAT"
-                }]
+                    "app_name": "UAT",
+                    "script_url": "https://code.qt.io/cgit/qbs/qbs.git/plain/scripts/install-qt.sh"
+                }
             }
         ],
         "compilers": [{
                 "name": "Cmake",
-                "script_url": ""
+                "script_url": "https://raw.githubusercontent.com/pipoe2h/calm/webpage/demo/areydemo/cmake.sh"
             },
             {
                 "name": "Make",
