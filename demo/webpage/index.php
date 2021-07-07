@@ -1,5 +1,18 @@
 <?php
 $platform = $_ENV['PLATFORM'];
+$ip = $_SERVER['SERVER_ADDR'];
+$dbserver = $_ENV['DBSERVER'];
+$dbusername = $_ENV['DBUSERNAME'];
+$dbpassword = $_ENV['DBPASSWORD'];
+$dbname = $_ENV['DBNAME'];
+
+// Create connection
+$conn = new mysqli($dbserver, $dbusername, $dbpassword, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -49,10 +62,9 @@ $platform = $_ENV['PLATFORM'];
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a href="https://github.com/pipoe2h" target="_blank">Designed by Chris Kingdon</a>
+                    <a href="https://github.com/pipoe2h" target="_blank">Designed by Jose Gomez</a>
                 </div>
                     <div class="col">
-                        <!-- <a href="https://nutanix.com" target="_blank"><img class="img-fluid" src="https://www.tescoplc.com/assets/img/tesco-logo.svg"></a> -->
                         <a href="https://nutanix.com" target="_blank"><img class="img-fluid" src="nutanix_logo.png"></a>
                     </div>
                 <div class="col">
