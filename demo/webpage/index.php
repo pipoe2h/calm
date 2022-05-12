@@ -1,18 +1,19 @@
 <?php
 $platform = $_ENV['PLATFORM'];
-$ip = $_SERVER['SERVER_ADDR'];
+$ip = $_ENV['VM_IP'];
 $dbserver = $_ENV['DBSERVER'];
 $dbusername = $_ENV['DBUSERNAME'];
 $dbpassword = $_ENV['DBPASSWORD'];
 $dbname = $_ENV['DBNAME'];
 
 // Create connection
-$conn = new mysqli($dbserver, $dbusername, $dbpassword, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if ($dbserver) {
+    $conn = new mysqli($dbserver, $dbusername, $dbpassword, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -36,13 +37,16 @@ if ($conn->connect_error) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Nutanix Hybrid Cloud Application</h1>
+                    <h1>Nutanix Hybrid Multicloud Application</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="mt-5 mb-5 col-lg-6">
                     <p class="text-center">
                         <a href="#" class="btn btn-md btn-secondary">Host: <?php echo gethostname(); ?></a>
+                    </p>
+                    <p class="text-center">
+                        <a href="#" class="btn btn-md btn-secondary">IP: <?php echo $ip ?></a>
                     </p>
                 </div>
                 <div class="mt-5 mb-5 col-lg-6">
@@ -53,7 +57,7 @@ if ($conn->connect_error) {
             </div>
             <div class="row">
                 <div class="mt-5 mb-5 col-lg-12">
-                    <img class="img-fluid" src="nutanix_hybrid_cloud.png">
+                    <img class="img-fluid" src="nutanix_hybrid_multicloud.png">
                 </div>
             </div>
         </div>
@@ -68,7 +72,7 @@ if ($conn->connect_error) {
                         <a href="https://nutanix.com" target="_blank"><img class="img-fluid" src="nutanix_logo.png"></a>
                     </div>
                 <div class="col">
-                    <a class="float-right" href="<?php echo 'http://' .getenv('CALM_LB'). ':8080/stats'; ?>" target="_blank">Load Balancer</a>
+                    <a class="float-right" href="<?php echo getenv('CALM_LB'); ?>" target="_blank">Load Balancer</a>
                 </div>
             </div>
         </div>
