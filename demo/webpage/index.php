@@ -40,23 +40,25 @@ if ($dbserver) {
                     <h1>Nutanix Hybrid Multicloud Application</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="mt-5 mb-5 col-lg-6">
-                    <p class="text-center">
-                        <a href="#" class="btn btn-md btn-secondary">Host: <?php echo gethostname(); ?></a>
-                    </p>
-                    <p class="text-center">
-                        <a href="#" class="btn btn-md btn-secondary">IP: <?php echo $ip ?></a>
-                    </p>
-                </div>
-                <div class="mt-5 mb-5 col-lg-6">
+            <div class="mt-3 mb-3 row">
+                <div class="col-lg-4">
                     <p class="text-center">
                         <a href="#" class="<?php echo $platform ?> btn btn-md btn-secondary">Cloud: <?php echo $platform ?></a>
                     </p>
                 </div>
+                <div class="col-lg-4">
+                    <p class="text-center">
+                        <a href="#" class="btn btn-md btn-secondary">Host: <?php echo gethostname(); ?></a>
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <p class="text-center">
+                        <a href="#" class="btn btn-md btn-secondary">IP: <?php echo $ip ?></a>
+                    </p>
+                </div>
             </div>
             <div class="row">
-                <div class="mt-5 mb-5 col-lg-12">
+                <div class="col-lg-12">
                     <img class="img-fluid" src="nutanix_hybrid_multicloud.png">
                 </div>
             </div>
