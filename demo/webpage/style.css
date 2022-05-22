@@ -2,21 +2,26 @@
  * Globals
  */
 
+
 /* Links */
+
 a,
 a:focus,
 a:hover {
-  color: #fff;
+    color: #fff;
 }
 
+
 /* Custom default button */
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #4C4C4E;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+    color: #4C4C4E;
+    text-shadow: none;
+    /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
 }
 
 
@@ -25,63 +30,64 @@ a:hover {
  */
 
 html {
-  position: relative;
+    position: relative;
 }
 
 body {
-  height: 100%;
-  background-color: #4C4C4E;
-  /* background-image: url("https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/88a041c6-407d-4f21-8c0e-695d5ae50a71/1945-Centenary-Zone-GHS-Hero-1600x451.jpeg"); */
-  color: #fff;
-  justify-content: center;
-  margin-bottom: 60px;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    height: 100%;
+    /* background-color: #4C4C4E; */
+    background-color: #000000;
+    /* background-image: url("https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/88a041c6-407d-4f21-8c0e-695d5ae50a71/1945-Centenary-Zone-GHS-Hero-1600x451.jpeg"); */
+    color: #fff;
+    justify-content: center;
+    margin-bottom: 60px;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  bottom: 0;
-  line-height: 40px;
-  background-color: #024DA1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    bottom: 0;
+    line-height: 40px;
+    background-color: #024DA1;
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
 }
 
 .nutanix {
-  background-color: #bfd02f;
-  color: white;
+    background-color: #bfd02f;
+    color: white;
 }
 
-.xi {
-  background-color: #024DA1;
-  color: white;
+.nc2 {
+    background-color: #024DA1;
+    color: white;
 }
 
 .azure {
-  background-color: #1e75bb;
-  color: white;
+    background-color: #1e75bb;
+    color: white;
 }
 
 .aws {
-  background-color: #ff9802;
-  color: white;
+    background-color: #ff9802;
+    color: white;
 }
 
 .gcp {
-  background-color: #eb412e;
-  color: white;
+    background-color: #eb412e;
+    color: white;
 }
 
 .vmware {
-  background-color: #717174;
-  color: white;
+    background-color: #717174;
+    color: white;
 }
 
 .k8s {
-  background-color: #f30df3;
-  color: white;
+    background-color: #f30df3;
+    color: white;
 }
