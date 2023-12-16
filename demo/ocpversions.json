@@ -7,7 +7,7 @@
   ],
   "openshift_releases": [
     {
-      "name": "4.11",
+      "minor_version": "4.11",
       "stable": "4.11.54",
       "versions": [
         "stable-4.11",
@@ -65,14 +65,10 @@
         "4.11.2",
         "4.11.1",
         "4.11.0"
-      ],
-      "features": {
-        "projects": false,
-        "proxy": true
-      }
+      ]
     },
     {
-      "name": "4.12",
+      "minor_version": "4.12",
       "stable": "4.12.44",
       "versions": [
         "stable-4.12",
@@ -121,14 +117,10 @@
         "4.12.2",
         "4.12.1",
         "4.12.0"
-      ],
-      "features": {
-        "projects": false,
-        "proxy": true
-      }
+      ]
     },
     {
-      "name": "4.13",
+      "minor_version": "4.13",
       "stable": "4.13.24",
       "versions": [
         "stable-4.13",
@@ -156,14 +148,10 @@
         "4.13.2",
         "4.13.1",
         "4.13.0"
-      ],
-      "features": {
-        "projects": true,
-        "proxy": true
-      }
+      ]
     },
     {
-      "name": "4.14",
+      "minor_version": "4.14",
       "stable": "4.14.4",
       "versions": [
         "stable-14.4",
@@ -172,11 +160,37 @@
         "4.14.2",
         "4.14.1",
         "4.14.0"
-      ],
-      "features": {
-        "projects": true,
-        "proxy": true
-      }
+      ]
+    }
+  ],
+  "openshift_templates": [
+    {
+      "filename": "install-config.yaml",
+      "content": "IyBWYWxpZCBmb3IgT0NQIDQuMTEsIDQuMTIsIDQuMTMsIGFuZCA0LjE0CmFwaVZlcnNpb246IHYxCmJhc2VEb21haW46ICR7T0NQX0JBU0VfRE9NQUlOfQpjb21wdXRlOgotIGFyY2hpdGVjdHVyZTogJHtPQ1BfQVJDSH0gIyBPcHRpb25hbAogIGh5cGVydGhyZWFkaW5nOiBFbmFibGVkICMgT3B0aW9uYWwKICBuYW1lOiB3b3JrZXIKICBwbGF0Zm9ybToge30KICByZXBsaWNhczogJHtPQ1BfV09SS0VSU30gIyBNaW5pbXVtOiAyIHwgRGVmYXVsdDogMwpjb250cm9sUGxhbmU6CiAgYXJjaGl0ZWN0dXJlOiAke09DUF9BUkNIfSAjIE9wdGlvbmFsCiAgaHlwZXJ0aHJlYWRpbmc6IEVuYWJsZWQgIyBPcHRpb25hbAogIG5hbWU6IG1hc3RlcgogIHJlcGxpY2FzOiAzCiAgcGxhdGZvcm06CiAgICBudXRhbml4OiAKICAgICAgY3B1czogJHtPQ1BfQ1BfQ1BVfSAjIG1pbmltdW0gNAogICAgICBjb3Jlc1BlclNvY2tldDogMQogICAgICBtZW1vcnlNaUI6ICR7T0NQX0NQX01FTX0gIyBtaW5pbXVtIDE2R0IKICAgICAgb3NEaXNrOgogICAgICAgIGRpc2tTaXplR2lCOiAxMjAKY3JlZGVudGlhbHNNb2RlOiBNYW51YWwKbWV0YWRhdGE6CiAgY3JlYXRpb25UaW1lc3RhbXA6IG51bGwKICBuYW1lOiAke09DUF9DTFVTVEVSX05BTUV9Cm5ldHdvcmtpbmc6CiAgY2x1c3Rlck5ldHdvcms6CiAgLSBjaWRyOiAke09DUF9DTFVTVEVSX05FVFdPUkt9CiAgICBob3N0UHJlZml4OiAke09DUF9DTFVTVEVSX0hPU1RQUkVGSVh9CiAgbWFjaGluZU5ldHdvcms6CiAgLSBjaWRyOiAke09DUF9NQUNISU5FX05FVFdPUkt9CiAgbmV0d29ya1R5cGU6IE9wZW5TaGlmdFNETgogIHNlcnZpY2VOZXR3b3JrOgogIC0gJHtPQ1BfU0VSVklDRV9ORVRXT1JLfQpwbGF0Zm9ybToKICBudXRhbml4OgogICAgYXBpVklQOiAke09DUF9BUElWSVB9CiAgICBpbmdyZXNzVklQOiAke09DUF9JTkdSRVNTVklQfQogICAgcHJpc21DZW50cmFsOgogICAgICBlbmRwb2ludDoKICAgICAgICBhZGRyZXNzOiAke09DUF9QQ19GUUROfQogICAgICAgIHBvcnQ6ICR7T0NQX1BDX1BPUlR9CiAgICAgIHBhc3N3b3JkOiAke09DUF9QQ19QQVNTV09SRH0KICAgICAgdXNlcm5hbWU6ICR7T0NQX1BDX1VTRVJOQU1FfQogICAgcHJpc21FbGVtZW50czoKICAgIC0gZW5kcG9pbnQ6CiAgICAgICAgYWRkcmVzczogJHtPQ1BfUEVfRlFETn0KICAgICAgICBwb3J0OiAke09DUF9QRV9QT1JUfQogICAgICB1dWlkOiAke09DUF9QRV9VVUlEfQogICAgc3VibmV0VVVJRHM6CiAgICAtICR7T0NQX1BFX1NVQk5FVF9VVUlEfQpwdWJsaXNoOiBFeHRlcm5hbApwdWxsU2VjcmV0OiAnJHtPQ1BfUFVMTF9TRUNSRVR9Jwpzc2hLZXk6ICR7T0NQX1NTSF9QVUJMSUNfS0VZfQphZGRpdGlvbmFsVHJ1c3RCdW5kbGU6IHwKJHtPQ1BfUENfQ0VSVH0=",
+      "openshift_releases": [
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14"
+      ]
+    }
+  ],
+  "openshift_features": [
+    {
+      "feature": "proxy",
+      "openshift_releases": [
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14"
+      ]
+    },
+    {
+      "feature": "projects",
+      "openshift_releases": [
+        "4.13",
+        "4.14"
+      ]
     }
   ]
 }
