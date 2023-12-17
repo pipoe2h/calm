@@ -1,9 +1,9 @@
 {
   "bp_compatible_with_red_hat_openshift": [
-    "4.11",
-    "4.12",
+    "4.14",
     "4.13",
-    "4.14"
+    "4.12",
+    "4.11"
   ],
   "openshift_releases": [
     {
