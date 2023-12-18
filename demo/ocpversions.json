@@ -242,7 +242,7 @@
         "4.13",
         "4.14"
       ]
-    }
+    },
     {
       "feature": "projects",
       "openshift_releases": [
