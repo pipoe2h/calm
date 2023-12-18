@@ -239,6 +239,7 @@
     {
       "feature": "additionalTrustBundlePolicy",
       "openshift_releases": [
+        "4.12",
         "4.13",
         "4.14"
       ]
