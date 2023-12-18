@@ -200,6 +200,30 @@
         "4.13",
         "4.14"
       ]
+    },
+    {
+      "name": "99-master-ntnx-csi-enable-iscsid",
+      "filename": "99-master-ntnx-csi-enable-iscsid.yaml",
+      "path": "$HOME/openshift/manifests",
+      "content": "YXBpVmVyc2lvbjogbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3YxCmtpbmQ6IE1hY2hpbmVDb25maWcKbWV0YWRhdGE6CiAgbGFiZWxzOgogICAgbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3JvbGU6IG1hc3RlcgogIG5hbWU6IDk5LW1hc3Rlci1udG54LWNzaS1lbmFibGUtaXNjc2lkCnNwZWM6CiAgY29uZmlnOgogICAgaWduaXRpb246CiAgICAgIHZlcnNpb246IDMuMi4wCiAgICBzeXN0ZW1kOgogICAgICB1bml0czoKICAgICAgICAtIGVuYWJsZWQ6IHRydWUKICAgICAgICAgIG5hbWU6IGlzY3NpZC5zZXJ2aWNl",
+      "openshift_releases": [
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14"
+      ]
+    },
+    {
+      "name": "99-worker-ntnx-csi-enable-iscsid",
+      "filename": "99-worker-ntnx-csi-enable-iscsid.yaml",
+      "path": "$HOME/openshift/manifests",
+      "content": "YXBpVmVyc2lvbjogbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3YxCmtpbmQ6IE1hY2hpbmVDb25maWcKbWV0YWRhdGE6CiAgbGFiZWxzOgogICAgbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3JvbGU6IHdvcmtlcgogIG5hbWU6IDk5LXdvcmtlci1udG54LWNzaS1lbmFibGUtaXNjc2lkCnNwZWM6CiAgY29uZmlnOgogICAgaWduaXRpb246CiAgICAgIHZlcnNpb246IDMuMi4wCiAgICBzeXN0ZW1kOgogICAgICB1bml0czoKICAgICAgICAtIGVuYWJsZWQ6IHRydWUKICAgICAgICAgIG5hbWU6IGlzY3NpZC5zZXJ2aWNl",
+      "openshift_releases": [
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14"
+      ]
     }
   ],
   "openshift_features": [
