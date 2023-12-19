@@ -169,9 +169,10 @@
     "openshift_templates": [
         {
             "name": "install-config",
+            "description": "",
             "filename": "install-config.yaml",
             "basepath": "$HOME/openshift",
-            "content": "IyBWYWxpZCBmb3IgT0NQIDQuMTEsIDQuMTIsIDQuMTMsIGFuZCA0LjE0CmFwaVZlcnNpb246IHYxCmJhc2VEb21haW46ICR7T0NQX0JBU0VfRE9NQUlOfQpjb21wdXRlOgotIGFyY2hpdGVjdHVyZTogJHtPQ1BfQVJDSH0gIyBPcHRpb25hbAogIGh5cGVydGhyZWFkaW5nOiBFbmFibGVkICMgT3B0aW9uYWwKICBuYW1lOiB3b3JrZXIKICBwbGF0Zm9ybToge30KICByZXBsaWNhczogJHtPQ1BfV09SS0VSU30gIyBNaW5pbXVtOiAyIHwgRGVmYXVsdDogMwpjb250cm9sUGxhbmU6CiAgYXJjaGl0ZWN0dXJlOiAke09DUF9BUkNIfSAjIE9wdGlvbmFsCiAgaHlwZXJ0aHJlYWRpbmc6IEVuYWJsZWQgIyBPcHRpb25hbAogIG5hbWU6IG1hc3RlcgogIHJlcGxpY2FzOiAzCiAgcGxhdGZvcm06CiAgICBudXRhbml4OiAKICAgICAgY3B1czogJHtPQ1BfQ1BfQ1BVfSAjIG1pbmltdW0gNAogICAgICBjb3Jlc1BlclNvY2tldDogMQogICAgICBtZW1vcnlNaUI6ICR7T0NQX0NQX01FTX0gIyBtaW5pbXVtIDE2R0IKICAgICAgb3NEaXNrOgogICAgICAgIGRpc2tTaXplR2lCOiAke09DUF9DUF9ESVNLfQpjcmVkZW50aWFsc01vZGU6IE1hbnVhbAptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6ICR7T0NQX0NMVVNURVJfTkFNRX0KbmV0d29ya2luZzoKICBjbHVzdGVyTmV0d29yazoKICAtIGNpZHI6ICR7T0NQX0NMVVNURVJfTkVUV09SS30KICAgIGhvc3RQcmVmaXg6ICR7T0NQX0NMVVNURVJfSE9TVFBSRUZJWH0KICBtYWNoaW5lTmV0d29yazoKICAtIGNpZHI6ICR7T0NQX01BQ0hJTkVfTkVUV09SS30KICBuZXR3b3JrVHlwZTogT3BlblNoaWZ0U0ROCiAgc2VydmljZU5ldHdvcms6CiAgLSAke09DUF9TRVJWSUNFX05FVFdPUkt9CnBsYXRmb3JtOgogIG51dGFuaXg6CiAgICBhcGlWSVA6ICR7T0NQX0FQSVZJUH0KICAgIGluZ3Jlc3NWSVA6ICR7T0NQX0lOR1JFU1NWSVB9CiAgICBwcmlzbUNlbnRyYWw6CiAgICAgIGVuZHBvaW50OgogICAgICAgIGFkZHJlc3M6ICR7UENfRlFETn0KICAgICAgICBwb3J0OiAke1BDX1BPUlR9CiAgICAgIHBhc3N3b3JkOiAke1BDX1BBU1NXT1JEfQogICAgICB1c2VybmFtZTogJHtQQ19VU0VSTkFNRX0KICAgIHByaXNtRWxlbWVudHM6CiAgICAtIGVuZHBvaW50OgogICAgICAgIGFkZHJlc3M6ICR7UEVfRlFETn0KICAgICAgICBwb3J0OiAke1BFX1BPUlR9CiAgICAgIHV1aWQ6ICR7TlROWF9QRV9VVUlEfQogICAgc3VibmV0VVVJRHM6CiAgICAtICR7TlROWF9QRV9TVUJORVRfVVVJRH0KcHVibGlzaDogRXh0ZXJuYWwKcHVsbFNlY3JldDogJyR7T0NQX1BVTExfU0VDUkVUfScKc3NoS2V5OiAke1NTSF9QVUJMSUNfS0VZfQphZGRpdGlvbmFsVHJ1c3RCdW5kbGVQb2xpY3k6IEFsd2F5cwo=",
+            "content": "IyBWYWxpZCBmb3IgT0NQIDQuMTEsIDQuMTIsIDQuMTMsIGFuZCA0LjE0CmFwaVZlcnNpb246IHYxCmJhc2VEb21haW46ICR7T0NQX0JBU0VfRE9NQUlOfQpjb21wdXRlOgotIGFyY2hpdGVjdHVyZTogJHtPQ1BfQVJDSH0gIyBPcHRpb25hbAogIGh5cGVydGhyZWFkaW5nOiBFbmFibGVkICMgT3B0aW9uYWwKICBuYW1lOiB3b3JrZXIKICBwbGF0Zm9ybToge30KICByZXBsaWNhczogJHtPQ1BfV09SS0VSU30gIyBNaW5pbXVtOiAyIHwgRGVmYXVsdDogMwpjb250cm9sUGxhbmU6CiAgYXJjaGl0ZWN0dXJlOiAke09DUF9BUkNIfSAjIE9wdGlvbmFsCiAgaHlwZXJ0aHJlYWRpbmc6IEVuYWJsZWQgIyBPcHRpb25hbAogIG5hbWU6IG1hc3RlcgogIHJlcGxpY2FzOiAzCiAgcGxhdGZvcm06CiAgICBudXRhbml4OiAKICAgICAgY3B1czogJHtPQ1BfQ1BfQ1BVfSAjIG1pbmltdW0gNAogICAgICBjb3Jlc1BlclNvY2tldDogMQogICAgICBtZW1vcnlNaUI6ICR7T0NQX0NQX01FTX0gIyBtaW5pbXVtIDE2R0IKICAgICAgb3NEaXNrOgogICAgICAgIGRpc2tTaXplR2lCOiAke09DUF9DUF9ESVNLfQpjcmVkZW50aWFsc01vZGU6IE1hbnVhbAptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6ICR7T0NQX0NMVVNURVJfTkFNRX0KbmV0d29ya2luZzoKICBjbHVzdGVyTmV0d29yazoKICAtIGNpZHI6ICR7T0NQX0NMVVNURVJfTkVUV09SS30KICAgIGhvc3RQcmVmaXg6ICR7T0NQX0NMVVNURVJfSE9TVFBSRUZJWH0KICBtYWNoaW5lTmV0d29yazoKICAtIGNpZHI6ICR7T0NQX01BQ0hJTkVfTkVUV09SS30KICBuZXR3b3JrVHlwZTogT3BlblNoaWZ0U0ROCiAgc2VydmljZU5ldHdvcms6CiAgLSAke09DUF9TRVJWSUNFX05FVFdPUkt9CnBsYXRmb3JtOgogIG51dGFuaXg6CiAgICBhcGlWSVA6ICR7T0NQX0FQSVZJUH0KICAgIGluZ3Jlc3NWSVA6ICR7T0NQX0lOR1JFU1NWSVB9CiAgICBwcmlzbUNlbnRyYWw6CiAgICAgIGVuZHBvaW50OgogICAgICAgIGFkZHJlc3M6ICR7UENfRlFETn0KICAgICAgICBwb3J0OiAke1BDX1BPUlR9CiAgICAgIHBhc3N3b3JkOiAke1BDX1BBU1NXT1JEfQogICAgICB1c2VybmFtZTogJHtQQ19VU0VSTkFNRX0KICAgIHByaXNtRWxlbWVudHM6CiAgICAtIGVuZHBvaW50OgogICAgICAgIGFkZHJlc3M6ICR7UEVfRlFETn0KICAgICAgICBwb3J0OiAke1BFX1BPUlR9CiAgICAgIHV1aWQ6ICR7TlROWF9QRV9VVUlEfQogICAgc3VibmV0VVVJRHM6CiAgICAtICR7TlROWF9QRV9TVUJORVRfVVVJRH0KcHVibGlzaDogRXh0ZXJuYWwKcHVsbFNlY3JldDogJyR7T0NQX1BVTExfU0VDUkVUfScKc3NoS2V5OiAke1NTSF9QVUJMSUNfS0VZfQo=",
             "openshift_releases": [
                 "4.11",
                 "4.12",
@@ -181,6 +182,7 @@
         },
         {
             "name": "cluster-proxy-01-config",
+            "description": "",
             "filename": "manifests/cluster-proxy-01-config.yaml",
             "basepath": "$HOME/openshift",
             "content": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBQcm94eQptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6IGNsdXN0ZXIKc3BlYzoKICB0cnVzdGVkQ0E6CiAgICBuYW1lOiAidXNlci1jYS1idW5kbGUiIApzdGF0dXM6IHt9",
@@ -190,6 +192,7 @@
         },
         {
             "name": "openshift-machine-api-nutanix-credentials-credentials",
+            "description": "",
             "filename": "manifests/openshift-machine-api-nutanix-credentials-credentials.yaml",
             "basepath": "$HOME/openshift",
             "content": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG51dGFuaXgtY3JlZGVudGlhbHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1tYWNoaW5lLWFwaQp0eXBlOiBPcGFxdWUKc3RyaW5nRGF0YToKICBjcmVkZW50aWFsczogIlt7CiAgICBcInR5cGVcIjpcImJhc2ljX2F1dGhcIiwKICAgIFwiZGF0YVwiOnsKICAgICAgICAgIFwicHJpc21DZW50cmFsXCI6ewogICAgICAgICAgICBcInVzZXJuYW1lXCI6XCIke1BDX1VTRVJOQU1FfVwiLCAKICAgICAgICAgICAgXCJwYXNzd29yZFwiOlwiJHtQQ19QQVNTV09SRH1cIn0sIAogICAgICAgICAgICBcInByaXNtRWxlbWVudHNcIjpudWxsCiAgICAgICAgICB9CiAgICB9XSI=",
@@ -202,6 +205,7 @@
         },
         {
             "name": "openshift-cloud-controller-manager-nutanix-credentials-credentials",
+            "description": "",
             "filename": "manifests/openshift-cloud-controller-manager-nutanix-credentials-credentials.yaml",
             "basepath": "$HOME/openshift",
             "content": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG51dGFuaXgtY3JlZGVudGlhbHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1jbG91ZC1jb250cm9sbGVyLW1hbmFnZXIKdHlwZTogT3BhcXVlCnN0cmluZ0RhdGE6CiAgY3JlZGVudGlhbHM6ICJbewogICAgXCJ0eXBlXCI6XCJiYXNpY19hdXRoXCIsCiAgICBcImRhdGFcIjp7CiAgICAgICAgICBcInByaXNtQ2VudHJhbFwiOnsKICAgICAgICAgICAgXCJ1c2VybmFtZVwiOlwiJHtQQ19VU0VSTkFNRX1cIiwgCiAgICAgICAgICAgIFwicGFzc3dvcmRcIjpcIiR7UENfUEFTU1dPUkR9XCJ9LCAKICAgICAgICAgICAgXCJwcmlzbUVsZW1lbnRzXCI6bnVsbAogICAgICAgICAgfQogICAgfV0i",
@@ -212,6 +216,7 @@
         },
         {
             "name": "99-master-ntnx-csi-enable-iscsid",
+            "description": "",
             "filename": "manifests/99-master-ntnx-csi-enable-iscsid.yaml",
             "basepath": "$HOME/openshift",
             "content": "YXBpVmVyc2lvbjogbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3YxCmtpbmQ6IE1hY2hpbmVDb25maWcKbWV0YWRhdGE6CiAgbGFiZWxzOgogICAgbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3JvbGU6IG1hc3RlcgogIG5hbWU6IDk5LW1hc3Rlci1udG54LWNzaS1lbmFibGUtaXNjc2lkCnNwZWM6CiAgY29uZmlnOgogICAgaWduaXRpb246CiAgICAgIHZlcnNpb246IDMuMi4wCiAgICBzeXN0ZW1kOgogICAgICB1bml0czoKICAgICAgICAtIGVuYWJsZWQ6IHRydWUKICAgICAgICAgIG5hbWU6IGlzY3NpZC5zZXJ2aWNl",
@@ -224,6 +229,7 @@
         },
         {
             "name": "99-worker-ntnx-csi-enable-iscsid",
+            "description": "",
             "filename": "manifests/99-worker-ntnx-csi-enable-iscsid.yaml",
             "basepath": "$HOME/openshift",
             "content": "YXBpVmVyc2lvbjogbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3YxCmtpbmQ6IE1hY2hpbmVDb25maWcKbWV0YWRhdGE6CiAgbGFiZWxzOgogICAgbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3JvbGU6IHdvcmtlcgogIG5hbWU6IDk5LXdvcmtlci1udG54LWNzaS1lbmFibGUtaXNjc2lkCnNwZWM6CiAgY29uZmlnOgogICAgaWduaXRpb246CiAgICAgIHZlcnNpb246IDMuMi4wCiAgICBzeXN0ZW1kOgogICAgICB1bml0czoKICAgICAgICAtIGVuYWJsZWQ6IHRydWUKICAgICAgICAgIG5hbWU6IGlzY3NpZC5zZXJ2aWNl",
