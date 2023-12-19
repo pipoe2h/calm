@@ -1,258 +1,267 @@
 {
-  "bp_compatible_with_red_hat_openshift": [
-    "4.14",
-    "4.13",
-    "4.12",
-    "4.11"
-  ],
-  "openshift_releases": [
-    {
-      "minor_version": "4.11",
-      "stable": "4.11.54",
-      "versions": [
-        "stable-4.11",
-        "4.11.54",
-        "4.11.53",
-        "4.11.52",
-        "4.11.51",
-        "4.11.50",
-        "4.11.49",
-        "4.11.48",
-        "4.11.47",
-        "4.11.46",
-        "4.11.45",
-        "4.11.44",
-        "4.11.43",
-        "4.11.42",
-        "4.11.41",
-        "4.11.40",
-        "4.11.39",
-        "4.11.38",
-        "4.11.37",
-        "4.11.36",
-        "4.11.35",
-        "4.11.34",
-        "4.11.33",
-        "4.11.32",
-        "4.11.31",
-        "4.11.30",
-        "4.11.29",
-        "4.11.28",
-        "4.11.27",
-        "4.11.26",
-        "4.11.25",
-        "4.11.24",
-        "4.11.23",
-        "4.11.22",
-        "4.11.21",
-        "4.11.20",
-        "4.11.19",
-        "4.11.18",
-        "4.11.17",
-        "4.11.16",
-        "4.11.14",
-        "4.11.13",
-        "4.11.12",
-        "4.11.11",
-        "4.11.10",
-        "4.11.9",
-        "4.11.8",
-        "4.11.7",
-        "4.11.6",
-        "4.11.5",
-        "4.11.4",
-        "4.11.3",
-        "4.11.2",
-        "4.11.1",
-        "4.11.0"
-      ]
-    },
-    {
-      "minor_version": "4.12",
-      "stable": "4.12.45",
-      "versions": [
-        "stable-4.12",
-        "4.12.45",
-        "4.12.44",
-        "4.12.43",
-        "4.12.42",
-        "4.12.41",
-        "4.12.40",
-        "4.12.39",
-        "4.12.38",
-        "4.12.37",
-        "4.12.36",
-        "4.12.35",
-        "4.12.34",
-        "4.12.33",
-        "4.12.32",
-        "4.12.31",
-        "4.12.30",
-        "4.12.29",
-        "4.12.28",
-        "4.12.27",
-        "4.12.26",
-        "4.12.25",
-        "4.12.24",
-        "4.12.23",
-        "4.12.22",
-        "4.12.21",
-        "4.12.20",
-        "4.12.19",
-        "4.12.18",
-        "4.12.17",
-        "4.12.16",
-        "4.12.15",
-        "4.12.14",
-        "4.12.13",
-        "4.12.12",
-        "4.12.11",
-        "4.12.10",
-        "4.12.9",
-        "4.12.8",
-        "4.12.7",
-        "4.12.6",
-        "4.12.5",
-        "4.12.4",
-        "4.12.3",
-        "4.12.2",
-        "4.12.1",
-        "4.12.0"
-      ]
-    },
-    {
-      "minor_version": "4.13",
-      "stable": "4.13.25",
-      "versions": [
-        "stable-4.13",
-        "4.13.25",
-        "4.13.24",
-        "4.13.23",
-        "4.13.22",
-        "4.13.21",
-        "4.13.19",
-        "4.13.18",
-        "4.13.17",
-        "4.13.16",
-        "4.13.15",
-        "4.13.14",
-        "4.13.13",
-        "4.13.12",
-        "4.13.11",
-        "4.13.10",
-        "4.13.9",
-        "4.13.8",
-        "4.13.7",
-        "4.13.6",
-        "4.13.5",
-        "4.13.4",
-        "4.13.3",
-        "4.13.2",
-        "4.13.1",
-        "4.13.0"
-      ]
-    },
-    {
-      "minor_version": "4.14",
-      "stable": "4.14.5",
-      "versions": [
-        "stable-4.14",
-        "4.14.5",
-        "4.14.4",
-        "4.14.3",
-        "4.14.2",
-        "4.14.1",
-        "4.14.0"
-      ]
-    }
-  ],
-  "openshift_templates": [
-    {
-      "name": "install-config",
-      "filename": "install-config.yaml",
-      "path": "$HOME/openshift",
-      "content": "IyBWYWxpZCBmb3IgT0NQIDQuMTEsIDQuMTIsIDQuMTMsIGFuZCA0LjE0CmFwaVZlcnNpb246IHYxCmJhc2VEb21haW46ICR7T0NQX0JBU0VfRE9NQUlOfQpjb21wdXRlOgotIGFyY2hpdGVjdHVyZTogJHtPQ1BfQVJDSH0gIyBPcHRpb25hbAogIGh5cGVydGhyZWFkaW5nOiBFbmFibGVkICMgT3B0aW9uYWwKICBuYW1lOiB3b3JrZXIKICBwbGF0Zm9ybToge30KICByZXBsaWNhczogJHtPQ1BfV09SS0VSU30gIyBNaW5pbXVtOiAyIHwgRGVmYXVsdDogMwpjb250cm9sUGxhbmU6CiAgYXJjaGl0ZWN0dXJlOiAke09DUF9BUkNIfSAjIE9wdGlvbmFsCiAgaHlwZXJ0aHJlYWRpbmc6IEVuYWJsZWQgIyBPcHRpb25hbAogIG5hbWU6IG1hc3RlcgogIHJlcGxpY2FzOiAzCiAgcGxhdGZvcm06CiAgICBudXRhbml4OiAKICAgICAgY3B1czogJHtPQ1BfQ1BfQ1BVfSAjIG1pbmltdW0gNAogICAgICBjb3Jlc1BlclNvY2tldDogMQogICAgICBtZW1vcnlNaUI6ICR7T0NQX0NQX01FTX0gIyBtaW5pbXVtIDE2R0IKICAgICAgb3NEaXNrOgogICAgICAgIGRpc2tTaXplR2lCOiAke09DUF9DUF9ESVNLfQpjcmVkZW50aWFsc01vZGU6IE1hbnVhbAptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6ICR7T0NQX0NMVVNURVJfTkFNRX0KbmV0d29ya2luZzoKICBjbHVzdGVyTmV0d29yazoKICAtIGNpZHI6ICR7T0NQX0NMVVNURVJfTkVUV09SS30KICAgIGhvc3RQcmVmaXg6ICR7T0NQX0NMVVNURVJfSE9TVFBSRUZJWH0KICBtYWNoaW5lTmV0d29yazoKICAtIGNpZHI6ICR7T0NQX01BQ0hJTkVfTkVUV09SS30KICBuZXR3b3JrVHlwZTogT3BlblNoaWZ0U0ROCiAgc2VydmljZU5ldHdvcms6CiAgLSAke09DUF9TRVJWSUNFX05FVFdPUkt9CnBsYXRmb3JtOgogIG51dGFuaXg6CiAgICBhcGlWSVA6ICR7T0NQX0FQSVZJUH0KICAgIGluZ3Jlc3NWSVA6ICR7T0NQX0lOR1JFU1NWSVB9CiAgICBwcmlzbUNlbnRyYWw6CiAgICAgIGVuZHBvaW50OgogICAgICAgIGFkZHJlc3M6ICR7UENfRlFETn0KICAgICAgICBwb3J0OiAke1BDX1BPUlR9CiAgICAgIHBhc3N3b3JkOiAke1BDX1BBU1NXT1JEfQogICAgICB1c2VybmFtZTogJHtQQ19VU0VSTkFNRX0KICAgIHByaXNtRWxlbWVudHM6CiAgICAtIGVuZHBvaW50OgogICAgICAgIGFkZHJlc3M6ICR7UEVfRlFETn0KICAgICAgICBwb3J0OiAke1BFX1BPUlR9CiAgICAgIHV1aWQ6ICR7TlROWF9QRV9VVUlEfQogICAgc3VibmV0VVVJRHM6CiAgICAtICR7TlROWF9QRV9TVUJORVRfVVVJRH0KcHVibGlzaDogRXh0ZXJuYWwKcHVsbFNlY3JldDogJyR7T0NQX1BVTExfU0VDUkVUfScKc3NoS2V5OiAke1NTSF9QVUJMSUNfS0VZfQphZGRpdGlvbmFsVHJ1c3RCdW5kbGVQb2xpY3k6IEFsd2F5cwo=",
-      "openshift_releases": [
-        "4.11",
+    "bp_compatible_with_red_hat_openshift": [
+        "4.14",
+        "4.13",
         "4.12",
-        "4.13",
-        "4.14"
-      ]
-    },
-    {
-      "name": "openshift-machine-api-nutanix-credentials-credentials",
-      "filename": "openshift-machine-api-nutanix-credentials-credentials.yaml",
-      "path": "$HOME/openshift/manifests",
-      "content": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG51dGFuaXgtY3JlZGVudGlhbHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1tYWNoaW5lLWFwaQp0eXBlOiBPcGFxdWUKc3RyaW5nRGF0YToKICBjcmVkZW50aWFsczogIlt7CiAgICBcInR5cGVcIjpcImJhc2ljX2F1dGhcIiwKICAgIFwiZGF0YVwiOnsKICAgICAgICAgIFwicHJpc21DZW50cmFsXCI6ewogICAgICAgICAgICBcInVzZXJuYW1lXCI6XCIke1BDX1VTRVJOQU1FfVwiLCAKICAgICAgICAgICAgXCJwYXNzd29yZFwiOlwiJHtQQ19QQVNTV09SRH1cIn0sIAogICAgICAgICAgICBcInByaXNtRWxlbWVudHNcIjpudWxsCiAgICAgICAgICB9CiAgICB9XSI=",
-      "openshift_releases": [
-        "4.11",
-        "4.12",
-        "4.13",
-        "4.14"
-      ]
-    },
-    {
-      "name": "openshift-cloud-controller-manager-nutanix-credentials-credentials",
-      "filename": "openshift-cloud-controller-manager-nutanix-credentials-credentials.yaml",
-      "path": "$HOME/openshift/manifests",
-      "content": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG51dGFuaXgtY3JlZGVudGlhbHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1jbG91ZC1jb250cm9sbGVyLW1hbmFnZXIKdHlwZTogT3BhcXVlCnN0cmluZ0RhdGE6CiAgY3JlZGVudGlhbHM6ICJbewogICAgXCJ0eXBlXCI6XCJiYXNpY19hdXRoXCIsCiAgICBcImRhdGFcIjp7CiAgICAgICAgICBcInByaXNtQ2VudHJhbFwiOnsKICAgICAgICAgICAgXCJ1c2VybmFtZVwiOlwiJHtQQ19VU0VSTkFNRX1cIiwgCiAgICAgICAgICAgIFwicGFzc3dvcmRcIjpcIiR7UENfUEFTU1dPUkR9XCJ9LCAKICAgICAgICAgICAgXCJwcmlzbUVsZW1lbnRzXCI6bnVsbAogICAgICAgICAgfQogICAgfV0i",
-      "openshift_releases": [
-        "4.13",
-        "4.14"
-      ]
-    },
-    {
-      "name": "99-master-ntnx-csi-enable-iscsid",
-      "filename": "99-master-ntnx-csi-enable-iscsid.yaml",
-      "path": "$HOME/openshift/manifests",
-      "content": "YXBpVmVyc2lvbjogbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3YxCmtpbmQ6IE1hY2hpbmVDb25maWcKbWV0YWRhdGE6CiAgbGFiZWxzOgogICAgbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3JvbGU6IG1hc3RlcgogIG5hbWU6IDk5LW1hc3Rlci1udG54LWNzaS1lbmFibGUtaXNjc2lkCnNwZWM6CiAgY29uZmlnOgogICAgaWduaXRpb246CiAgICAgIHZlcnNpb246IDMuMi4wCiAgICBzeXN0ZW1kOgogICAgICB1bml0czoKICAgICAgICAtIGVuYWJsZWQ6IHRydWUKICAgICAgICAgIG5hbWU6IGlzY3NpZC5zZXJ2aWNl",
-      "openshift_releases": [
-        "4.11",
-        "4.12",
-        "4.13",
-        "4.14"
-      ]
-    },
-    {
-      "name": "99-worker-ntnx-csi-enable-iscsid",
-      "filename": "99-worker-ntnx-csi-enable-iscsid.yaml",
-      "path": "$HOME/openshift/manifests",
-      "content": "YXBpVmVyc2lvbjogbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3YxCmtpbmQ6IE1hY2hpbmVDb25maWcKbWV0YWRhdGE6CiAgbGFiZWxzOgogICAgbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3JvbGU6IHdvcmtlcgogIG5hbWU6IDk5LXdvcmtlci1udG54LWNzaS1lbmFibGUtaXNjc2lkCnNwZWM6CiAgY29uZmlnOgogICAgaWduaXRpb246CiAgICAgIHZlcnNpb246IDMuMi4wCiAgICBzeXN0ZW1kOgogICAgICB1bml0czoKICAgICAgICAtIGVuYWJsZWQ6IHRydWUKICAgICAgICAgIG5hbWU6IGlzY3NpZC5zZXJ2aWNl",
-      "openshift_releases": [
-        "4.11",
-        "4.12",
-        "4.13",
-        "4.14"
-      ]
-    }
-  ],
-  "openshift_features": [
-    {
-      "feature": "proxy",
-      "content": "cHJveHk6CiAgaHR0cFByb3h5OiAke09DUF9QUk9YWV9IVFRQfSAjIGh0dHA6Ly88dXNlcm5hbWU+Ojxwc3dkPkA8aXA+Ojxwb3J0PiAKICBodHRwc1Byb3h5OiAke09DUF9QUk9YWV9IVFRQU30gIyBodHRwczovLzx1c2VybmFtZT46PHBzd2Q+QDxpcD46PHBvcnQ+IAogIG5vUHJveHk6ICR7T0NQX1BST1hZX05PUFJPWFl9ICMgZXhhbXBsZS5jb20sLmV4YW1wbGUuY29t",
-      "openshift_releases": [
-        "4.11",
-        "4.12",
-        "4.13",
-        "4.14"
-      ]
-    },
-    {
-      "feature": "additionalTrustBundlePolicy",
-      "content": "YWRkaXRpb25hbFRydXN0QnVuZGxlUG9saWN5OiBBbHdheXM=",
-      "openshift_releases": [
-        "4.12",
-        "4.13",
-        "4.14"
-      ]
-    },
-    {
-      "feature": "projects",
-      "content": "ZGVmYXVsdE1hY2hpbmVQbGF0Zm9ybToKICBwcm9qZWN0OiAKICAgIHR5cGU6IG5hbWUKICAgIG5hbWU6ICR7UENfUFJPSkVDVF9OQU1FfQ==",
-      "openshift_releases": [
-        "4.13",
-        "4.14"
-      ]
-    }
-  ]
+        "4.11"
+    ],
+    "openshift_releases": [
+        {
+            "minor_version": "4.11",
+            "stable": "4.11.54",
+            "versions": [
+                "stable-4.11",
+                "4.11.54",
+                "4.11.53",
+                "4.11.52",
+                "4.11.51",
+                "4.11.50",
+                "4.11.49",
+                "4.11.48",
+                "4.11.47",
+                "4.11.46",
+                "4.11.45",
+                "4.11.44",
+                "4.11.43",
+                "4.11.42",
+                "4.11.41",
+                "4.11.40",
+                "4.11.39",
+                "4.11.38",
+                "4.11.37",
+                "4.11.36",
+                "4.11.35",
+                "4.11.34",
+                "4.11.33",
+                "4.11.32",
+                "4.11.31",
+                "4.11.30",
+                "4.11.29",
+                "4.11.28",
+                "4.11.27",
+                "4.11.26",
+                "4.11.25",
+                "4.11.24",
+                "4.11.23",
+                "4.11.22",
+                "4.11.21",
+                "4.11.20",
+                "4.11.19",
+                "4.11.18",
+                "4.11.17",
+                "4.11.16",
+                "4.11.14",
+                "4.11.13",
+                "4.11.12",
+                "4.11.11",
+                "4.11.10",
+                "4.11.9",
+                "4.11.8",
+                "4.11.7",
+                "4.11.6",
+                "4.11.5",
+                "4.11.4",
+                "4.11.3",
+                "4.11.2",
+                "4.11.1",
+                "4.11.0"
+            ]
+        },
+        {
+            "minor_version": "4.12",
+            "stable": "4.12.45",
+            "versions": [
+                "stable-4.12",
+                "4.12.45",
+                "4.12.44",
+                "4.12.43",
+                "4.12.42",
+                "4.12.41",
+                "4.12.40",
+                "4.12.39",
+                "4.12.38",
+                "4.12.37",
+                "4.12.36",
+                "4.12.35",
+                "4.12.34",
+                "4.12.33",
+                "4.12.32",
+                "4.12.31",
+                "4.12.30",
+                "4.12.29",
+                "4.12.28",
+                "4.12.27",
+                "4.12.26",
+                "4.12.25",
+                "4.12.24",
+                "4.12.23",
+                "4.12.22",
+                "4.12.21",
+                "4.12.20",
+                "4.12.19",
+                "4.12.18",
+                "4.12.17",
+                "4.12.16",
+                "4.12.15",
+                "4.12.14",
+                "4.12.13",
+                "4.12.12",
+                "4.12.11",
+                "4.12.10",
+                "4.12.9",
+                "4.12.8",
+                "4.12.7",
+                "4.12.6",
+                "4.12.5",
+                "4.12.4",
+                "4.12.3",
+                "4.12.2",
+                "4.12.1",
+                "4.12.0"
+            ]
+        },
+        {
+            "minor_version": "4.13",
+            "stable": "4.13.25",
+            "versions": [
+                "stable-4.13",
+                "4.13.25",
+                "4.13.24",
+                "4.13.23",
+                "4.13.22",
+                "4.13.21",
+                "4.13.19",
+                "4.13.18",
+                "4.13.17",
+                "4.13.16",
+                "4.13.15",
+                "4.13.14",
+                "4.13.13",
+                "4.13.12",
+                "4.13.11",
+                "4.13.10",
+                "4.13.9",
+                "4.13.8",
+                "4.13.7",
+                "4.13.6",
+                "4.13.5",
+                "4.13.4",
+                "4.13.3",
+                "4.13.2",
+                "4.13.1",
+                "4.13.0"
+            ]
+        },
+        {
+            "minor_version": "4.14",
+            "stable": "4.14.5",
+            "versions": [
+                "stable-4.14",
+                "4.14.5",
+                "4.14.4",
+                "4.14.3",
+                "4.14.2",
+                "4.14.1",
+                "4.14.0"
+            ]
+        }
+    ],
+    "openshift_templates": [
+        {
+            "name": "install-config",
+            "filename": "install-config.yaml",
+            "basepath": "$HOME/openshift",
+            "content": "IyBWYWxpZCBmb3IgT0NQIDQuMTEsIDQuMTIsIDQuMTMsIGFuZCA0LjE0CmFwaVZlcnNpb246IHYxCmJhc2VEb21haW46ICR7T0NQX0JBU0VfRE9NQUlOfQpjb21wdXRlOgotIGFyY2hpdGVjdHVyZTogJHtPQ1BfQVJDSH0gIyBPcHRpb25hbAogIGh5cGVydGhyZWFkaW5nOiBFbmFibGVkICMgT3B0aW9uYWwKICBuYW1lOiB3b3JrZXIKICBwbGF0Zm9ybToge30KICByZXBsaWNhczogJHtPQ1BfV09SS0VSU30gIyBNaW5pbXVtOiAyIHwgRGVmYXVsdDogMwpjb250cm9sUGxhbmU6CiAgYXJjaGl0ZWN0dXJlOiAke09DUF9BUkNIfSAjIE9wdGlvbmFsCiAgaHlwZXJ0aHJlYWRpbmc6IEVuYWJsZWQgIyBPcHRpb25hbAogIG5hbWU6IG1hc3RlcgogIHJlcGxpY2FzOiAzCiAgcGxhdGZvcm06CiAgICBudXRhbml4OiAKICAgICAgY3B1czogJHtPQ1BfQ1BfQ1BVfSAjIG1pbmltdW0gNAogICAgICBjb3Jlc1BlclNvY2tldDogMQogICAgICBtZW1vcnlNaUI6ICR7T0NQX0NQX01FTX0gIyBtaW5pbXVtIDE2R0IKICAgICAgb3NEaXNrOgogICAgICAgIGRpc2tTaXplR2lCOiAke09DUF9DUF9ESVNLfQpjcmVkZW50aWFsc01vZGU6IE1hbnVhbAptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6ICR7T0NQX0NMVVNURVJfTkFNRX0KbmV0d29ya2luZzoKICBjbHVzdGVyTmV0d29yazoKICAtIGNpZHI6ICR7T0NQX0NMVVNURVJfTkVUV09SS30KICAgIGhvc3RQcmVmaXg6ICR7T0NQX0NMVVNURVJfSE9TVFBSRUZJWH0KICBtYWNoaW5lTmV0d29yazoKICAtIGNpZHI6ICR7T0NQX01BQ0hJTkVfTkVUV09SS30KICBuZXR3b3JrVHlwZTogT3BlblNoaWZ0U0ROCiAgc2VydmljZU5ldHdvcms6CiAgLSAke09DUF9TRVJWSUNFX05FVFdPUkt9CnBsYXRmb3JtOgogIG51dGFuaXg6CiAgICBhcGlWSVA6ICR7T0NQX0FQSVZJUH0KICAgIGluZ3Jlc3NWSVA6ICR7T0NQX0lOR1JFU1NWSVB9CiAgICBwcmlzbUNlbnRyYWw6CiAgICAgIGVuZHBvaW50OgogICAgICAgIGFkZHJlc3M6ICR7UENfRlFETn0KICAgICAgICBwb3J0OiAke1BDX1BPUlR9CiAgICAgIHBhc3N3b3JkOiAke1BDX1BBU1NXT1JEfQogICAgICB1c2VybmFtZTogJHtQQ19VU0VSTkFNRX0KICAgIHByaXNtRWxlbWVudHM6CiAgICAtIGVuZHBvaW50OgogICAgICAgIGFkZHJlc3M6ICR7UEVfRlFETn0KICAgICAgICBwb3J0OiAke1BFX1BPUlR9CiAgICAgIHV1aWQ6ICR7TlROWF9QRV9VVUlEfQogICAgc3VibmV0VVVJRHM6CiAgICAtICR7TlROWF9QRV9TVUJORVRfVVVJRH0KcHVibGlzaDogRXh0ZXJuYWwKcHVsbFNlY3JldDogJyR7T0NQX1BVTExfU0VDUkVUfScKc3NoS2V5OiAke1NTSF9QVUJMSUNfS0VZfQphZGRpdGlvbmFsVHJ1c3RCdW5kbGVQb2xpY3k6IEFsd2F5cwo=",
+            "openshift_releases": [
+                "4.11",
+                "4.12",
+                "4.13",
+                "4.14"
+            ]
+        },
+        {
+            "name": "cluster-proxy-01-config",
+            "filename": "manifests/cluster-proxy-01-config.yaml",
+            "basepath": "$HOME/openshift",
+            "content": "YXBpVmVyc2lvbjogY29uZmlnLm9wZW5zaGlmdC5pby92MQpraW5kOiBQcm94eQptZXRhZGF0YToKICBjcmVhdGlvblRpbWVzdGFtcDogbnVsbAogIG5hbWU6IGNsdXN0ZXIKc3BlYzoKICB0cnVzdGVkQ0E6CiAgICBuYW1lOiAidXNlci1jYS1idW5kbGUiIApzdGF0dXM6IHt9",
+            "openshift_releases": [
+                "4.11"
+            ]
+        },
+        {
+            "name": "openshift-machine-api-nutanix-credentials-credentials",
+            "filename": "manifests/openshift-machine-api-nutanix-credentials-credentials.yaml",
+            "basepath": "$HOME/openshift",
+            "content": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG51dGFuaXgtY3JlZGVudGlhbHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1tYWNoaW5lLWFwaQp0eXBlOiBPcGFxdWUKc3RyaW5nRGF0YToKICBjcmVkZW50aWFsczogIlt7CiAgICBcInR5cGVcIjpcImJhc2ljX2F1dGhcIiwKICAgIFwiZGF0YVwiOnsKICAgICAgICAgIFwicHJpc21DZW50cmFsXCI6ewogICAgICAgICAgICBcInVzZXJuYW1lXCI6XCIke1BDX1VTRVJOQU1FfVwiLCAKICAgICAgICAgICAgXCJwYXNzd29yZFwiOlwiJHtQQ19QQVNTV09SRH1cIn0sIAogICAgICAgICAgICBcInByaXNtRWxlbWVudHNcIjpudWxsCiAgICAgICAgICB9CiAgICB9XSI=",
+            "openshift_releases": [
+                "4.11",
+                "4.12",
+                "4.13",
+                "4.14"
+            ]
+        },
+        {
+            "name": "openshift-cloud-controller-manager-nutanix-credentials-credentials",
+            "filename": "manifests/openshift-cloud-controller-manager-nutanix-credentials-credentials.yaml",
+            "basepath": "$HOME/openshift",
+            "content": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG51dGFuaXgtY3JlZGVudGlhbHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1jbG91ZC1jb250cm9sbGVyLW1hbmFnZXIKdHlwZTogT3BhcXVlCnN0cmluZ0RhdGE6CiAgY3JlZGVudGlhbHM6ICJbewogICAgXCJ0eXBlXCI6XCJiYXNpY19hdXRoXCIsCiAgICBcImRhdGFcIjp7CiAgICAgICAgICBcInByaXNtQ2VudHJhbFwiOnsKICAgICAgICAgICAgXCJ1c2VybmFtZVwiOlwiJHtQQ19VU0VSTkFNRX1cIiwgCiAgICAgICAgICAgIFwicGFzc3dvcmRcIjpcIiR7UENfUEFTU1dPUkR9XCJ9LCAKICAgICAgICAgICAgXCJwcmlzbUVsZW1lbnRzXCI6bnVsbAogICAgICAgICAgfQogICAgfV0i",
+            "openshift_releases": [
+                "4.13",
+                "4.14"
+            ]
+        },
+        {
+            "name": "99-master-ntnx-csi-enable-iscsid",
+            "filename": "manifests/99-master-ntnx-csi-enable-iscsid.yaml",
+            "basepath": "$HOME/openshift",
+            "content": "YXBpVmVyc2lvbjogbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3YxCmtpbmQ6IE1hY2hpbmVDb25maWcKbWV0YWRhdGE6CiAgbGFiZWxzOgogICAgbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3JvbGU6IG1hc3RlcgogIG5hbWU6IDk5LW1hc3Rlci1udG54LWNzaS1lbmFibGUtaXNjc2lkCnNwZWM6CiAgY29uZmlnOgogICAgaWduaXRpb246CiAgICAgIHZlcnNpb246IDMuMi4wCiAgICBzeXN0ZW1kOgogICAgICB1bml0czoKICAgICAgICAtIGVuYWJsZWQ6IHRydWUKICAgICAgICAgIG5hbWU6IGlzY3NpZC5zZXJ2aWNl",
+            "openshift_releases": [
+                "4.11",
+                "4.12",
+                "4.13",
+                "4.14"
+            ]
+        },
+        {
+            "name": "99-worker-ntnx-csi-enable-iscsid",
+            "filename": "manifests/99-worker-ntnx-csi-enable-iscsid.yaml",
+            "basepath": "$HOME/openshift",
+            "content": "YXBpVmVyc2lvbjogbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3YxCmtpbmQ6IE1hY2hpbmVDb25maWcKbWV0YWRhdGE6CiAgbGFiZWxzOgogICAgbWFjaGluZWNvbmZpZ3VyYXRpb24ub3BlbnNoaWZ0LmlvL3JvbGU6IHdvcmtlcgogIG5hbWU6IDk5LXdvcmtlci1udG54LWNzaS1lbmFibGUtaXNjc2lkCnNwZWM6CiAgY29uZmlnOgogICAgaWduaXRpb246CiAgICAgIHZlcnNpb246IDMuMi4wCiAgICBzeXN0ZW1kOgogICAgICB1bml0czoKICAgICAgICAtIGVuYWJsZWQ6IHRydWUKICAgICAgICAgIG5hbWU6IGlzY3NpZC5zZXJ2aWNl",
+            "openshift_releases": [
+                "4.11",
+                "4.12",
+                "4.13",
+                "4.14"
+            ]
+        }
+    ],
+    "openshift_features": [
+        {
+            "feature": "proxy",
+            "content": "cHJveHk6CiAgaHR0cFByb3h5OiAke09DUF9QUk9YWV9IVFRQfSAjIGh0dHA6Ly88dXNlcm5hbWU+Ojxwc3dkPkA8aXA+Ojxwb3J0PiAKICBodHRwc1Byb3h5OiAke09DUF9QUk9YWV9IVFRQU30gIyBodHRwczovLzx1c2VybmFtZT46PHBzd2Q+QDxpcD46PHBvcnQ+IAogIG5vUHJveHk6ICR7T0NQX1BST1hZX05PUFJPWFl9ICMgZXhhbXBsZS5jb20sLmV4YW1wbGUuY29t",
+            "openshift_releases": [
+                "4.11",
+                "4.12",
+                "4.13",
+                "4.14"
+            ]
+        },
+        {
+            "feature": "additionalTrustBundlePolicy",
+            "content": "YWRkaXRpb25hbFRydXN0QnVuZGxlUG9saWN5OiBBbHdheXM=",
+            "openshift_releases": [
+                "4.12",
+                "4.13",
+                "4.14"
+            ]
+        },
+        {
+            "feature": "projects",
+            "content": "ZGVmYXVsdE1hY2hpbmVQbGF0Zm9ybToKICBwcm9qZWN0OiAKICAgIHR5cGU6IG5hbWUKICAgIG5hbWU6ICR7UENfUFJPSkVDVF9OQU1FfQ==",
+            "openshift_releases": [
+                "4.13",
+                "4.14"
+            ]
+        }
+    ]
 }
