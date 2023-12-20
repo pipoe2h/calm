@@ -269,7 +269,7 @@
         },
         {
             "name": "projects",
-            "content": "cGxhdGZvcm06CiAgbnV0YW5peDoKICAgIGRlZmF1bHRNYWNoaW5lUGxhdGZvcm06CiAgICAgIHByb2plY3Q6CiAgICAgICAgdHlwZTogbmFtZQogICAgICAgIG5hbWU6ICR7UENfUFJPSkVDVF9OQU1FfQ==",
+            "content": "ZGVmYXVsdE1hY2hpbmVQbGF0Zm9ybToKICBwcm9qZWN0OgogICAgdHlwZTogbmFtZQogICAgbmFtZTogJHtQQ19QUk9KRUNUX05BTUV9",
             "openshift_releases": [
                 "4.13",
                 "4.14"
