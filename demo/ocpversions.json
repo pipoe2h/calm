@@ -249,7 +249,7 @@
     ],
     "openshift_features": [
         {
-            "feature": "proxy",
+            "name": "proxy",
             "content": "cHJveHk6CiAgaHR0cFByb3h5OiAke09DUF9QUk9YWV9IVFRQfSAjIGh0dHA6Ly88dXNlcm5hbWU+Ojxwc3dkPkA8aXA+Ojxwb3J0PiAKICBodHRwc1Byb3h5OiAke09DUF9QUk9YWV9IVFRQU30gIyBodHRwczovLzx1c2VybmFtZT46PHBzd2Q+QDxpcD46PHBvcnQ+IAogIG5vUHJveHk6ICR7T0NQX1BST1hZX05PUFJPWFl9ICMgZXhhbXBsZS5jb20sLmV4YW1wbGUuY29t",
             "openshift_releases": [
                 "4.11",
@@ -259,7 +259,7 @@
             ]
         },
         {
-            "feature": "additionalTrustBundlePolicy",
+            "name": "additionalTrustBundlePolicy",
             "content": "YWRkaXRpb25hbFRydXN0QnVuZGxlUG9saWN5OiBBbHdheXM=",
             "openshift_releases": [
                 "4.12",
@@ -268,7 +268,7 @@
             ]
         },
         {
-            "feature": "projects",
+            "name": "projects",
             "content": "cGxhdGZvcm06CiAgbnV0YW5peDoKICAgIGRlZmF1bHRNYWNoaW5lUGxhdGZvcm06CiAgICAgIHByb2plY3Q6CiAgICAgICAgdHlwZTogbmFtZQogICAgICAgIG5hbWU6ICR7UENfUFJPSkVDVF9OQU1FfQ==",
             "openshift_releases": [
                 "4.13",
