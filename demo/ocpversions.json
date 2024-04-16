@@ -1,5 +1,6 @@
 {
     "bp_compatible_with_red_hat_openshift": [
+        "4.15",
         "4.14",
         "4.13",
         "4.12"
@@ -7,9 +8,18 @@
     "openshift_releases": [
         {
             "minor_version": "4.12",
-            "stable": "4.12.45",
+            "stable": "4.12.55",
             "versions": [
                 "stable-4.12",
+                "4.12.55",
+                "4.12.54",
+                "4.12.53",
+                "4.12.51",
+                "4.12.50",
+                "4.12.49",
+                "4.12.48",
+                "4.12.47",
+                "4.12.46",
                 "4.12.45",
                 "4.12.44",
                 "4.12.43",
@@ -60,9 +70,23 @@
         },
         {
             "minor_version": "4.13",
-            "stable": "4.13.25",
+            "stable": "4.13.39",
             "versions": [
                 "stable-4.13",
+                "4.13.39",
+                "4.13.38",
+                "4.13.37",
+                "4.13.36",
+                "4.13.35",
+                "4.13.34",
+                "4.13.33",
+                "4.13.32",
+                "4.13.31",
+                "4.13.30",
+                "4.13.29",
+                "4.13.28",
+                "4.13.27",
+                "4.13.26",
                 "4.13.25",
                 "4.13.24",
                 "4.13.23",
@@ -92,15 +116,46 @@
         },
         {
             "minor_version": "4.14",
-            "stable": "4.14.5",
+            "stable": "4.14.20",
             "versions": [
                 "stable-4.14",
+                "4.14.20",
+                "4.14.19",
+                "4.14.18",
+                "4.14.17",
+                "4.14.16",
+                "4.14.15",
+                "4.14.14",
+                "4.14.13",
+                "4.14.12",
+                "4.14.11",
+                "4.14.10",
+                "4.14.9",
+                "4.14.8",
+                "4.14.7",
+                "4.14.6",
                 "4.14.5",
                 "4.14.4",
                 "4.14.3",
                 "4.14.2",
                 "4.14.1",
                 "4.14.0"
+            ]
+        },
+        {
+            "minor_version": "4.15",
+            "stable": "4.15.8",
+            "versions": [
+                "stable-4.15",
+                "4.15.8",
+                "4.15.7",
+                "4.15.6",
+                "4.15.5",
+                "4.15.4",
+                "4.15.3",
+                "4.15.2",
+                "4.15.1",
+                "4.15.0"
             ]
         }
     ],
@@ -115,7 +170,8 @@
             "openshift_releases": [
                 "4.12",
                 "4.13",
-                "4.14"
+                "4.14",
+                "4.15"
             ]
         },
         {
@@ -137,7 +193,8 @@
             "openshift_releases": [
                 "4.12",
                 "4.13",
-                "4.14"
+                "4.14",
+                "4.15"
             ]
         },
         {
@@ -149,7 +206,8 @@
             "content": "YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IG51dGFuaXgtY3JlZGVudGlhbHMKICBuYW1lc3BhY2U6IG9wZW5zaGlmdC1jbG91ZC1jb250cm9sbGVyLW1hbmFnZXIKdHlwZTogT3BhcXVlCnN0cmluZ0RhdGE6CiAgY3JlZGVudGlhbHM6ICJbewogICAgXCJ0eXBlXCI6XCJiYXNpY19hdXRoXCIsCiAgICBcImRhdGFcIjp7CiAgICAgICAgICBcInByaXNtQ2VudHJhbFwiOnsKICAgICAgICAgICAgXCJ1c2VybmFtZVwiOlwiJHtQQ19VU0VSTkFNRX1cIiwgCiAgICAgICAgICAgIFwicGFzc3dvcmRcIjpcIiR7UENfUEFTU1dPUkR9XCJ9LCAKICAgICAgICAgICAgXCJwcmlzbUVsZW1lbnRzXCI6bnVsbAogICAgICAgICAgfQogICAgfV0i",
             "openshift_releases": [
                 "4.13",
-                "4.14"
+                "4.14",
+                "4.15"
             ]
         },
         {
@@ -162,7 +220,8 @@
             "openshift_releases": [
                 "4.12",
                 "4.13",
-                "4.14"
+                "4.14",
+                "4.15"
             ]
         },
         {
@@ -175,7 +234,8 @@
             "openshift_releases": [
                 "4.12",
                 "4.13",
-                "4.14"
+                "4.14",
+                "4.15"
             ]
         }
     ],
@@ -186,7 +246,8 @@
             "openshift_releases": [
                 "4.12",
                 "4.13",
-                "4.14"
+                "4.14",
+                "4.15"
             ]
         },
         {
@@ -195,7 +256,8 @@
             "openshift_releases": [
                 "4.12",
                 "4.13",
-                "4.14"
+                "4.14",
+                "4.15"
             ]
         },
         {
@@ -203,7 +265,8 @@
             "content": "ZGVmYXVsdE1hY2hpbmVQbGF0Zm9ybToKICBwcm9qZWN0OgogICAgdHlwZTogbmFtZQogICAgbmFtZTogJHtQQ19QUk9KRUNUX05BTUV9",
             "openshift_releases": [
                 "4.13",
-                "4.14"
+                "4.14",
+                "4.15"
             ]
         }
     ]
